@@ -4,7 +4,7 @@
 4. Move Sheet.bat to the desktop so that it acts as a shortcut
 
 Some Notes:
-1. Command prompt is not always nice and will add odd characters and symbols. One such is aE^ and is an ' I think.
+1. Command prompt is not always nice and will add odd characters and symbols. One is like aE^ and is an ' I think.
 2. the default for the abbreviated version is no.
 4. I hope the saving doesnt crash.
 6. If there is an error, it might be my fault or you need java. Either way, it will tell you that you need Java.
