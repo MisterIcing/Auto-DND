@@ -29,9 +29,11 @@ public class player {
 	String cha = "";
 	int temp = 0;
 	String style = "";
+	int aNum = 0;
+	int subNum = 0;
 	
 	//TODO add weapon & armor choices as new method in each class
-	public player(ArrayList<Integer> stats, String clss, int level, boolean abb)
+	public player(ArrayList<Integer> stats, String clss, int level, boolean abb, boolean hug)
 	{
 		nStats = stats;
 		nClss = clss;
@@ -39,7 +41,44 @@ public class player {
 		
 		System.out.println("Pick a race: Dwarf, Elf, Halfling, Human, Dragonborn, Gnome, "
 				+ "Half-Elf, Half-Orc, or Tiefling");
-		nRace = race.nextLine().toLowerCase().trim();
+		if(hug == true)
+		{
+			aNum = (int)(Math.random()*9);
+			if(aNum == 0) {
+				nRace = "dwarf";
+				subNum = (int)(Math.random()*2)+1;
+			}
+			else if(aNum == 1) {
+				nRace = "elf";
+				subNum = (int)(Math.random()*3)+1; 
+			}
+			else if(aNum == 2) {
+				nRace = "halfling";
+				subNum = (int)(Math.random()*2)+1;
+			}
+			else if(aNum == 3) {
+				nRace = "human";
+			}
+			else if(aNum == 4) {
+				nRace = "dragonborn";
+				subNum = (int)(Math.random()*10)+1;
+			}
+			else if(aNum == 5) {
+				nRace = "gnome";
+				subNum = (int)(Math.random()*2)+1;
+			}
+			else if(aNum == 6) {
+				nRace = "half-elf";
+			}
+			else if(aNum == 7) {
+				nRace = "half-orc";
+			}
+			else if(aNum == 8) {
+				nRace = "tiefling";
+			}
+		}
+		else
+			nRace = race.nextLine().toLowerCase().trim();
 		
 		if(nRace.equals("dwarf"))
 		{
@@ -80,7 +119,11 @@ public class player {
 			}
 			
 			System.out.println("Choose subrace: Hill Dwarf or Mountain Dwarf");
-			subR = race.nextLine().toLowerCase().trim();
+			if(subNum == 1) {subR = "hill dwarf";}
+			else if(subNum == 2) {subR = "mountain dwarf";}
+			else
+				subR = race.nextLine().toLowerCase().trim();
+			
 			if(subR.equals("hill dwarf"))
 			{
 				nStats.set(4, nStats.get(4) + 1);
@@ -148,7 +191,11 @@ public class player {
 			}
 			
 			System.out.println("Choose subrace: High Elf, Wood Elf, or Dark Elf");
-			subR = race.nextLine().toLowerCase().trim();
+			if(subNum == 1) {subR = "high elf";}
+			else if(subNum == 2) {subR = "wood elf";}
+			else if(subNum == 3) {subR = "dark elf";}
+			else
+				subR = race.nextLine().toLowerCase().trim();
 			
 			if(subR.equals("high elf"))
 			{
@@ -223,7 +270,7 @@ public class player {
 			{
 				descr += "Lucky \n\n"
 						+ "Brave \n\n"
-						+ "Halfling Ninmbleness \n\n"
+						+ "Halfling Nimbleness \n\n"
 						+ "Languages: Common & Halfling \n\n";
 			}
 			else {
@@ -245,7 +292,10 @@ public class player {
 			}
 			
 			System.out.println("Choose subrace: Lightfoot or Stout");
-			subR = race.nextLine().toLowerCase().trim();
+			if(subNum == 1) {subR = "lightfoot";}
+			else if(subNum == 2) {subR = "stout";}
+			else
+				subR = race.nextLine().toLowerCase().trim();
 			
 			if(subR.equals("lightfoot"))
 			{
@@ -304,10 +354,21 @@ public class player {
 			nStats.set(5, nStats.get(5) + 1);
 			speed = 30;
 			
-			System.out.println("Choose Draconic Ancestry: Black(acid), Blue(lightning), "
+			System.out.println("Choose Draconic Ancestry *Use the color: Black(acid), Blue(lightning), "
 					+ "Brass(fire), Bronze(lightning),\nCopper(acid), Gold(fire), "
 					+ "Green(poison), Red(fire), Silver(cold), White(cold)");
-			subR = race.nextLine().toLowerCase().trim();
+			if(subNum == 1) {subR = "black";}
+			else if(subNum == 2) {subR = "blue";}
+			else if(subNum == 3) {subR = "brass";}
+			else if(subNum == 4) {subR = "bronze";}
+			else if(subNum == 5) {subR = "copper";}
+			else if(subNum == 6) {subR = "gold";}
+			else if(subNum == 7) {subR = "green";}
+			else if(subNum == 8) {subR = "red";}
+			else if(subNum == 9) {subR = "silver";}
+			else if(subNum == 10) {subR = "white";}
+			else 
+				subR = race.nextLine().toLowerCase().trim();
 			
 			if(abb == true)
 			{
@@ -317,7 +378,7 @@ public class player {
 						+ "Languages: Common & Draconic \n\n";
 			}
 			else {
-				if(subR.equals("black") || subR.equals("blue") || subR.equals("Brass") ||
+				if(subR.equals("black") || subR.equals("blue") || subR.equals("brass") ||
 						subR.equals("bronze"))
 				{
 					descr += "Breath Weapon: 5 by 30 ft. line (Dex. save)\n\n";
@@ -387,7 +448,10 @@ public class player {
 			}
 			
 			System.out.println("Choose subrace: Forest Gnome or Rock Gnome");
-			subR = race.nextLine().toLowerCase().trim();
+			if(subNum == 1) {subR = "forest gnome";}
+			else if(subNum == 2) {subR = "rock gnome";}
+			else 
+				subR = race.nextLine().toLowerCase().trim();
 			
 			if(subR.equals("forest gnome"))
 			{
@@ -671,7 +735,7 @@ public class player {
 		{
 			System.out.println("Choose a subclass: Berserker or Totem Warrior");
 			subC = gloop.nextLine().toLowerCase();
-			this.getBns(); //here
+			this.getBns(); 
 			if(abb == true)
 			{
 				descr += xShort.getDescr(nClss, subC, nLevel);

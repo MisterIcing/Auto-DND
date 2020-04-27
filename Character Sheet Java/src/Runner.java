@@ -19,6 +19,7 @@ public class Runner {
 		String sprinkles;
 		int level = 0;
 		boolean abb = false;
+		boolean hug = false;
 		
 		System.out.println("Would You like the abbreviated version?");
 		if(in.nextLine().trim().toLowerCase().equals("yes"))
@@ -26,7 +27,6 @@ public class Runner {
 		
 		for (int j = 0; j < 6; j++)
 		{
-			//creates 1st roll
 			ArrayList<Integer> rolls = new ArrayList<Integer>(4);
 			for(int x = 0; x < 4; x++)
 				rolls.add(z.d6());
@@ -81,11 +81,70 @@ public class Runner {
 			stats = warlock.warlockStats(stats);
 		else if(sprinkles.equals("wizard"))
 			stats = wizard.wizardStats(stats);
+		else if(sprinkles.equals("hug"))
+		{
+			int x = z.d12();
+			hug = true;
+			
+			if(x == 1) {
+				stats = barbarian.barbarianStats(stats);
+				sprinkles = "barbarian";
+			}
+			else if(x == 2) {
+				stats = bard.bardStats(stats);
+				sprinkles = "bard";
+			}
+			else if(x == 3) {
+				stats = cleric.clericStats(stats);
+				sprinkles = "cleric";
+			}
+			else if(x == 4) {
+				stats = druid.druidStats(stats);
+				sprinkles = "druid";
+			}
+			else if(x == 5) {
+				stats = fighter.fighterStats(stats);
+				sprinkles = "fighter";
+			}
+			else if(x == 6) {
+				stats = monk.monkStats(stats);
+				sprinkles = "monk";
+			}
+			else if(x == 7) {
+				stats = paladin.paladinStats(stats);
+				sprinkles = "paladin";
+			}
+			else if(x == 8) {
+				stats = ranger.rangerStats(stats);
+				sprinkles = "ranger";
+			}
+			else if(x == 9) {
+				stats = rogue.rogueStats(stats);
+				sprinkles = "rogue";
+			}
+			else if(x == 10) {
+				stats = sorcerer.sorcererStats(stats);
+				sprinkles = "sorerer";
+			}
+			else if(x == 11) {
+				stats = warlock.warlockStats(stats);
+				sprinkles = "warlock";
+			}
+			else if(x == 12) {
+				stats = wizard.wizardStats(stats);
+				sprinkles = "wizard";
+			}
+		}
 		
 		System.out.println("What level");
 		
 		String lvl = "";
-		lvl = in.nextLine();
+		/*if(hug = true) {
+			lvl = Integer.toString(z.d20());
+		}
+		else*/
+			lvl = in.nextLine();
+		
 		if(z.checkIfInt(lvl))
 		{
 			level = Integer.parseInt(lvl);
@@ -93,7 +152,7 @@ public class Runner {
 				level = 20;
 			else if(level < 1)
 				level = 1;
-			player me = new player(stats, sprinkles, level, abb);
+			player me = new player(stats, sprinkles, level, abb, hug);
 			me.getBns();
 			System.out.println("*No Ability Score Improvements are included in final output.");
 			System.out.println(me.toString());
