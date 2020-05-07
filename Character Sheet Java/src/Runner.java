@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.*;
 
-
+//Hey, what are you doing here?
 @SuppressWarnings("unused")
 public class Runner {
 
@@ -19,8 +19,9 @@ public class Runner {
 		String sprinkles;
 		int level = 0;
 		boolean abb = false;
-		boolean hug = false;
+		boolean hug = false; //Cool Cool Cool
 		
+		System.out.println("Automatic DND Character Generator by Alex Issing");
 		System.out.println("Would You like the abbreviated version?");
 		if(in.nextLine().trim().toLowerCase().equals("yes"))
 			abb = true;
@@ -184,3 +185,4 @@ public class Runner {
 
 	}
 }
+//By Alex Issing
