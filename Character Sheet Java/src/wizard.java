@@ -56,7 +56,7 @@ public class wizard {
 						"to recover. The spell slots can have a combined level that\r\n" + 
 						"is equal to or less than half your wizard level (rounded\r\n" + 
 						"up), and none o f the slots can be 6th level or higher.\r\n" + 
-						"For example, if you’re a 4th-level wizard, you can recover\r\n" + 
+						"For example, if you're a 4th-level wizard, you can recover\r\n" + 
 						"up to two levels worth o f spell slots. You can recover either\r\n" + 
 						"a 2nd-level spell slot or two 1st-level spell slots.\n\n";
 			}
@@ -68,13 +68,13 @@ public class wizard {
 							+ "Arcane Ward. \nStarting at 2nd level, you can weave magic around\r\n" + 
 							"yourself for protection. When you cast an abjuration\r\n" + 
 							"spell o f 1st level or higher, you can simultaneously use a\r\n" + 
-							"strand of the spell’s magic to create a magical ward on\r\n" + 
+							"strand of the spell's magic to create a magical ward on\r\n" + 
 							"yourself that lasts until you finish a long rest. The ward\r\n" + 
 							"has hit points equal to twice your w izard level + your\r\n" + 
 							"Intelligence modifier. Whenever you take damage, the\r\n" + 
 							"ward takes the damage instead. If this damage reduces\r\n" + 
 							"the ward to 0 hit points, you take any remaining damage.\r\n" + 
-							"While the ward has 0 hit points, it can’t absorb\r\n" + 
+							"While the ward has 0 hit points, it can't absorb\r\n" + 
 							"damage, but its magic remains. Whenever you cast an\r\n" + 
 							"abjuration spell o f 1st level or higher, the ward regains a\r\n" + 
 							"number o f hit points equal to twice the level o f the spell.\r\n" + 
@@ -121,7 +121,7 @@ public class wizard {
 							"you can see within 5 feet of you. If the target can see or\r\n" + 
 							"hear you, it must succeed on a Wisdom saving throw\r\n" + 
 							"against your wizard spell save DC or be charmed by you\r\n" + 
-							"until the end of your next turn. The charmed creature’s\r\n" + 
+							"until the end of your next turn. The charmed creature's\r\n" + 
 							"speed drops to 0, and the creature is incapacitated and\r\n" + 
 							"visibly dazed.\r\n" + 
 							"On subsequent turns, you can use your action to\r\n" + 
@@ -131,7 +131,7 @@ public class wizard {
 							"creature can neither see nor hear you, or if the creature\r\n" + 
 							"takes damage.\r\n" + 
 							"Once the effect ends, or if the creature succeeds on its\r\n" + 
-							"initial saving throw against this effect, you can’t use this\r\n" + 
+							"initial saving throw against this effect, you can't use this\r\n" + 
 							"feature on that creature again until you finish a long rest.\n\n";
 				}
 				else if(subC.equals("evocation")){
@@ -142,7 +142,7 @@ public class wizard {
 							"relative safety within the effects o f your evocation spells.\r\n" + 
 							"When you cast an evocation spell that affects other\r\n" + 
 							"creatures that you can see, you can choose a number\r\n" + 
-							"of them equal to 1 + the spell’s level. The chosen\r\n" + 
+							"of them equal to 1 + the spell's level. The chosen\r\n" + 
 							"creatures automatically succeed on their saving throws\r\n" + 
 							"against the spell, and they take no damage if they would\r\n" + 
 							"normally take half damage on a successful save.\n\n";
@@ -154,7 +154,7 @@ public class wizard {
 							+ "Improved Minor Illusion. \nWhen you choose this school at 2nd level, you learn\r\n" + 
 							"the minor illusion cantrip. If you already know this\r\n" + 
 							"cantrip, you learn a different w izard cantrip o f your\r\n" +
-							"choice. The cantrip doesn’t count against your number\r\n" + 
+							"choice. The cantrip doesn't count against your number\r\n" + 
 							"of cantrips known.\r\n" + 
 							"When you cast minor illusion, you can create both a\r\n" + 
 							"sound and an image with a single casting o f the spell.\n\n";
@@ -182,9 +182,9 @@ public class wizard {
 							+ "Grim Harvest. \nAt 2nd level, you gain the ability to reap life energy from\r\n" + 
 							"creatures you kill with your spells. Once per turn when\r\n" + 
 							"you kill one or more creatures with a spell of 1st level\r\n" + 
-							"or higher, you regain hit points equal to twice the spell’s\r\n" + 
+							"or higher, you regain hit points equal to twice the spell's\r\n" + 
 							"level, or three times its level if the spell belongs to the\r\n" + 
-							"School o f Necromancy. You don’t gain this benefit for\r\n" + 
+							"School o f Necromancy. You don't gain this benefit for\r\n" + 
 							"killing constructs or undead.\n\n";
 				}
 			}
@@ -192,7 +192,7 @@ public class wizard {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){}
@@ -210,7 +210,7 @@ public class wizard {
 							"Alternatively, you can choose a space within range\r\n" + 
 							"that is occupied by a Small or M edium creature. If that\r\n" + 
 							"creature is willing, you both teleport, swapping places.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest or you cast a conjuration spell of\r\n" + 
 							"1st level or higher.\n\n";
 				}
@@ -220,59 +220,59 @@ public class wizard {
 							"spellcasting efforts. When you cast a divination spell\r\n" + 
 							"of 2nd level or higher using a spell slot, you regain one\r\n" + 
 							"expended spell slot. The slot you regain must be of a\r\n" + 
-							"level lower than the spell you cast and can’t be higher\r\n" + 
+							"level lower than the spell you cast and can't be higher\r\n" + 
 							"than 5th level.\n\n";
 				}
 				else if(subC.equals("enchantment")){
 					descr += "Instinctive Charm. \nBeginning at 6th level, when a creature you can see\r\n" + 
 							"within 30 feet o f you makes an attack roll against\r\n" + 
 							"you, you can use your reaction to divert the attack,\r\n" + 
-							"provided that another creature is within the attack’s\r\n" + 
+							"provided that another creature is within the attack's\r\n" + 
 							"range. The attacker must make a W isdom saving throw\r\n" + 
 							"against your wizard spell save DC. On a failed save,\r\n" + 
 							"the attacker must target the creature that is closest\r\n" + 
 							"to it, not including you or itself. If multiple creatures\r\n" + 
 							"are closest, the attacker chooses which one to target.\r\n" +
-							"On a successful save, you can’t use this feature on the\r\n" + 
+							"On a successful save, you can't use this feature on the\r\n" + 
 							"attacker again until you finish a long rest.\r\n" + 
 							"You must choose to use this feature before knowing\r\n" + 
-							"whether the attack hits or misses. Creatures that can’t\r\n" + 
+							"whether the attack hits or misses. Creatures that can't\r\n" + 
 							"be charmed are immune to this effect.\n\n";
 				}
 				else if(subC.equals("evocation")){
 					descr += "Potent Cantrip. \nStarting at 6th level, your damaging cantrips affect\r\n" + 
 							"even creatures that avoid the brunt o f the effect. When\r\n" + 
 							"a creature succeeds on a saving throw against your\r\n" + 
-							"cantrip, the creature takes half the cantrip’s damage (if\r\n" + 
+							"cantrip, the creature takes half the cantrip's damage (if\r\n" + 
 							"any) but suffers no additional effect from the cantrip.\n\n";
 				}
 				else if(subC.equals("illusion")){
 					descr += "Malleable Illusions. \nStarting at 6th level, when you cast an illusion spell that\r\n" + 
 							"has a duration of 1 minute or longer, you can use your\r\n" + 
 							"action to change the nature o f that illusion (using the\r\n" + 
-							"spell’s normal parameters for the illusion), provided that\r\n" + 
+							"spell's normal parameters for the illusion), provided that\r\n" + 
 							"you can see the illusion.\n\n";
 				}
 				else if(subC.equals("transmutation")){
 					descr += "Transmuter's Stone. \nStarting at 6th level, you can spend 8 hours creating a\r\n" + 
-							"transmuter’s stone that stores transmutation magic. You\r\n" + 
+							"transmuter's stone that stores transmutation magic. You\r\n" + 
 							"can benefit from the stone yourself or give it to another\r\n" + 
 							"creature. A creature gains a benefit o f your choice\r\n" + 
-							"as long as the stone is in the creature’s possession.\r\n" + 
+							"as long as the stone is in the creature's possession.\r\n" + 
 							"When you create the stone, choose the benefit from the\r\n" + 
 							"following options:\r\n" + 
-							"• Darkvision out to a range o f 60 feet, as described in\r\n" + 
+							"> Darkvision out to a range o f 60 feet, as described in\r\n" + 
 							"chapter 8\r\n" + 
-							"• An increase to speed o f 10 feet while the creature is\r\n" + 
+							"> An increase to speed o f 10 feet while the creature is\r\n" + 
 							"unencumbered\r\n" + 
-							"• Proficiency in Constitution saving throws\r\n" + 
-							"• Resistance to acid, cold, fire, lightning, or thunder\r\n" + 
+							"> Proficiency in Constitution saving throws\r\n" + 
+							"> Resistance to acid, cold, fire, lightning, or thunder\r\n" + 
 							"damage (your choice whenever you choose this\r\n" + 
 							"benefit)\r\n" + 
 							"Each time you cast a transmutation spell o f 1st level\r\n" + 
 							"or higher, you can change the effect o f your stone if the\r\n" + 
 							"stone is on your person.\r\n" + 
-							"If you create a new transmuter’s stone, the previous\r\n" + 
+							"If you create a new transmuter's stone, the previous\r\n" + 
 							"one ceases to function.\n\n";
 				}
 				else if(subC.equals("necromancy")){
@@ -283,9 +283,9 @@ public class wizard {
 							"as appropriate.\r\n" + 
 							"Whenever you create an undead using a necromancy\r\n" + 
 							"spell, it has additional benefits:\r\n" + 
-							"• The creature’s hit point maximum is increased by an\r\n" + 
+							"> The creature's hit point maximum is increased by an\r\n" + 
 							"amount equal to your w izard level.\r\n" + 
-							"• The creature adds your proficiency bonus to its\r\n" + 
+							"> The creature adds your proficiency bonus to its\r\n" + 
 							"weapon damage rolls.\n\n";
 				}
 			}
@@ -293,7 +293,7 @@ public class wizard {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){}
@@ -307,7 +307,7 @@ public class wizard {
 				}
 				else if(subC.equals("conjuration")){
 					descr += "Focused Conjuration. \nBeginning at 10th level, while you are concentrating on\r\n" + 
-							"a conjuration spell, your concentration can’t be broken\r\n" + 
+							"a conjuration spell, your concentration can't be broken\r\n" + 
 							"as a result o f taking damage.\n\n";
 				}
 				else if(subC.equals("divination")){
@@ -315,7 +315,7 @@ public class wizard {
 							"increase your powers o f perception. When you do so,\r\n"
 							+ "choose one o f the following benefits, which lasts until\r\n" + 
 							"you are incapacitated or you take a short or long rest.\r\n" + 
-							"You can’t use the feature again until you finish a rest.\n\n" + 
+							"You can't use the feature again until you finish a rest.\n\n" + 
 							"Darkvision. You gain darkvision out to a range o f 60\r\n" + 
 							"feet, as described in chapter 8.\r\n" + 
 							"Ethereal Sight. You can see into the Ethereal Plane\r\n" + 
@@ -342,7 +342,7 @@ public class wizard {
 							"the illusory duplicate between the attacker and\r\n" + 
 							"yourself. The attack automatically m isses you, then the\r\n" + 
 							"illusion dissipates.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a short or long rest.\n\n";
 				}
 				else if(subC.equals("transmutation")){
@@ -351,7 +351,7 @@ public class wizard {
 							"polymorph without expending a spell slot. When you\r\n" + 
 							"do so, you can target only yourself and transform into a\r\n" + 
 							"beast w hose challenge rating is 1 or lower.\r\n" + 
-							"Once you cast polymorph in this way, you can’t do so\r\n" + 
+							"Once you cast polymorph in this way, you can't do so\r\n" + 
 							"again until you finish a short or long rest, though you\r\n" + 
 							"can still cast it normally using an available spell slot.\n\n";
 				}
@@ -367,7 +367,7 @@ public class wizard {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){}
@@ -393,7 +393,7 @@ public class wizard {
 					descr += "Alter Memories. \nAt 14th level, you gain the ability to make a creature\r\n" + 
 							"unaware of your magical influence on it. When you cast\r\n" + 
 							"an enchantment spell to charm one or more creatures,\r\n" + 
-							"you can alter one creature’s understanding so that it\r\n" + 
+							"you can alter one creature's understanding so that it\r\n" + 
 							"remains unaware of being charmed.\r\n" + 
 							"Additionally, once before the spell expires, you can\r\n" + 
 							"use your action to try to make the chosen creature\r\n" + 
@@ -402,7 +402,7 @@ public class wizard {
 							"your wizard spell save DC or lose a number of hours\r\n" + 
 							"of its memories equal to 1 + your Charisma modifier\r\n" + 
 							"(minimum 1). You can make the creature forget less\r\n" + 
-							"time, and the amount o f time can’t exceed the duration\r\n" + 
+							"time, and the amount o f time can't exceed the duration\r\n" + 
 							"of your enchantment spell.\n\n";
 				}
 				else if(subC.equals("evocation")){
@@ -429,32 +429,32 @@ public class wizard {
 							"1 minute. For example, you can create an illusion o f a\r\n" + 
 							"bridge over a chasm and then make it real long enough\r\n" + 
 							"for your allies to cross.\r\n" + 
-							"The object can’t deal damage or otherwise\r\n" + 
+							"The object can't deal damage or otherwise\r\n" + 
 							"directly harm anyone.\n\n";
 				}
 				else if(subC.equals("transmutation")){
 					descr += "Master Transmuter. \nStarting at 14th level, you can use your action to\r\n" + 
 							"consume the reserve of transmutation magic stored\r\n" + 
-							"within your transmuter’s stone in a single burst. When\r\n" + 
+							"within your transmuter's stone in a single burst. When\r\n" + 
 							"you do so, choose one of the following effects. Your\r\n" + 
-							"transmuter’s stone is destroyed and can’t be remade\r\n" + 
+							"transmuter's stone is destroyed and can't be remade\r\n" + 
 							"until you finish a long rest.\n\n" + 
 							"Major Transformation. You can transmute one\r\n" + 
-							"nonmagical object—no larger than a 5-foot cube—into\r\n" + 
+							"nonmagical object'no larger than a 5-foot cube'into\r\n" + 
 							"another nonmagical object of similar size and mass and\r\n" + 
 							"o f equal or lesser value. You must spend 10 minutes\r\n" + 
 							"handling the object to transform it.\r\n" + 
 							"Panacea. You remove all curses, diseases, and poisons\r\n" + 
-							"affecting a creature that you touch with the transmuter’s\r\n" + 
+							"affecting a creature that you touch with the transmuter's\r\n" + 
 							"stone. The creature also regains all its hit points.\r\n" + 
 							"Restore Life. You cast the raise dead spell on a\r\n" + 
-							"creature you touch with the transmuter’s stone, without\r\n" + 
+							"creature you touch with the transmuter's stone, without\r\n" + 
 							"expending a spell slot or needing to have the spell in\r\n" + 
 							"your spellbook.\r\n" + 
-							"Restore Youth. You touch the transmuter’s stone to\r\n" + 
-							"a willing creature, and that creature’s apparent age is\r\n" + 
+							"Restore Youth. You touch the transmuter's stone to\r\n" + 
+							"a willing creature, and that creature's apparent age is\r\n" + 
 							"reduced by 3d10 years, to a minimum o f 13 years. This\r\n" + 
-							"effect doesn’t extend the creature’s lifespan.\n\n";
+							"effect doesn't extend the creature's lifespan.\n\n";
 				}
 				else if(subC.equals("necromancy")){
 					descr += "Command Undead. \nStarting at 14th level, you can use magic to bring\r\n" + 
@@ -462,7 +462,7 @@ public class wizard {
 							"wizards. As an action, you can choose one undead that\r\n" + 
 							"you can see within 60 feet o f you. That creature must\r\n" + 
 							"make a Charisma saving throw against your wizard\r\n" + 
-							"spell save DC. If it succeeds, you can’t use this feature\r\n" + 
+							"spell save DC. If it succeeds, you can't use this feature\r\n" + 
 							"on it again. If it fails, it becomes friendly to you and\r\n" + 
 							"obeys your commands until you use this feature again.\r\n" + 
 							"Intelligent undead are harder to control in this way.\r\n" + 
@@ -477,7 +477,7 @@ public class wizard {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){}
@@ -488,14 +488,14 @@ public class wizard {
 						"to recover. The spell slots can have a combined level that\r\n" + 
 						"is equal to or less than half your wizard level (rounded\r\n" + 
 						"up), and none o f the slots can be 6th level or higher.\r\n" + 
-						"For example, if you’re a 4th-level wizard, you can recover\r\n" + 
+						"For example, if you're a 4th-level wizard, you can recover\r\n" + 
 						"up to two levels worth o f spell slots. You can recover either\r\n" + 
 						"a 2nd-level spell slot or two 1st-level spell slots.\n\n";
 			}
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){
@@ -505,7 +505,7 @@ public class wizard {
 						"to recover. The spell slots can have a combined level that\r\n" + 
 						"is equal to or less than half your wizard level (rounded\r\n" + 
 						"up), and none o f the slots can be 6th level or higher.\r\n" + 
-						"For example, if you’re a 4th-level wizard, you can recover\r\n" + 
+						"For example, if you're a 4th-level wizard, you can recover\r\n" + 
 						"up to two levels worth o f spell slots. You can recover either\r\n" + 
 						"a 2nd-level spell slot or two 1st-level spell slots.\n\n";
 			}

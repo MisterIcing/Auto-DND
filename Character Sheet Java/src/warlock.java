@@ -58,7 +58,7 @@ public class warlock {
 							"creatures that fail their saving throws are all charmed\r\n" + 
 							"or frightened by you (your choice) until the end of\r\n" + 
 							"your next turn.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a short or long rest.\n\n"
 							+ "Spells: Faerie fire and Sleep\n\n";
 				}
@@ -72,7 +72,7 @@ public class warlock {
 					descr += "Awakened Mind. \nStarting at 1st level, your alien knowledge gives you\r\n" + 
 							"the ability to touch the minds of other creatures. You\r\n" + 
 							"can communicate telepathically with any creature you\r\n" + 
-							"can see within 30 feet of you. You don’t need to share\r\n" + 
+							"can see within 30 feet of you. You don't need to share\r\n" + 
 							"a language with the creature for it to understand your\r\n" + 
 							"telepathic utterances, but the creature must be able to\r\n" + 
 							"understand at least one language.\n\n"
@@ -116,7 +116,7 @@ public class warlock {
 				{
 					descr += "Pact of the Chain.\r\n" + 
 						"You learn the find familiar spell and can cast it as a\r\n" + 
-						"ritual. The spell doesn’t count against your number of\r\n" + 
+						"ritual. The spell doesn't count against your number of\r\n" + 
 						"spells known.\r\n" + 
 						"When you cast the spell, you can choose one of the\r\n" + 
 						"normal forms for your familiar or one of the following\r\n" + 
@@ -145,7 +145,7 @@ public class warlock {
 						"of 1 hour, which can be done during a short rest.\r\n" + 
 						"You can then dismiss the weapon, shunting it into an\r\n" + 
 						"extradimensional space, and it appears whenever you\r\n" + 
-						"create your pact weapon thereafter. You can’t affect an\r\n" + 
+						"create your pact weapon thereafter. You can't affect an\r\n" + 
 						"artifact or a sentient weapon in this way. The weapon\r\n" + 
 						"ceases being your pact weapon if you die, if you perform\r\n" + 
 						"the 1-hour ritual on a different weapon, or if you use\r\n" + 
@@ -158,9 +158,9 @@ public class warlock {
 					descr += "Pact of the Tome.\r\n" + 
 						"Your patron gives you a grimoire called a Book of\r\n" + 
 						"Shadows. When you gain this feature, choose three\r\n" + 
-						"cantrips from any class’s spell list. While the book is on\r\n" + 
+						"cantrips from any class's spell list. While the book is on\r\n" + 
 						"your person, you can cast those cantrips at will. They\r\n" + 
-						"don’t count against your number of cantrips known.\r\n" + 
+						"don't count against your number of cantrips known.\r\n" + 
 						"If you lose your Book of Shadows, you can perform\r\n" + 
 						"a 1-hour ceremony to receive a replacement from your\r\n" + 
 						"patron. This ceremony can be performed during a short\r\n" + 
@@ -182,7 +182,7 @@ public class warlock {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 				
 				//spells
@@ -224,19 +224,19 @@ public class warlock {
 							"fate in your favor. When you make an ability check or a\r\n" + 
 							"saving throw, you can use this feature to add a d 10 to\r\n" + 
 							"your roll. You can do so after seeing the initial roll but\r\n" + 
-							"before any of the roll’s effects occur.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"before any of the roll's effects occur.\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a short or long rest.\n\n";
 				}
 				else if(subC.equals("great")){
 					descr += "Entropic Ward. \nAt 6th level, you learn to magically ward yourself against\r\n" + 
-							"attack and to turn an enemy’s failed strike into good\r\n" + 
+							"attack and to turn an enemy's failed strike into good\r\n" + 
 							"luck for yourself. When a creature makes an attack\r\n" + 
 							"roll against you, you can use your reaction to impose\r\n" + 
 							"disadvantage on that roll. If the attack misses you, your\r\n" + 
 							"next attack roll against the creature has advantage if you\r\n" + 
 							"make it before the end of your next turn.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a short or long rest.\n\n";
 				}
 			}
@@ -244,7 +244,7 @@ public class warlock {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){}
@@ -268,7 +268,7 @@ public class warlock {
 							"silver weapons ignores this resistance.\n\n";
 				}
 				else if(subC.equals("great")){
-					descr += "Thought Shield. \nStarting at 10th level, your thoughts can’t be read by\r\n" + 
+					descr += "Thought Shield. \nStarting at 10th level, your thoughts can't be read by\r\n" + 
 							"telepathy or other m eans unless you allow it. You also\r\n" + 
 							"have resistance to psychic damage, and whenever a\r\n" + 
 							"creature deals psychic damage to you, that creature\r\n" + 
@@ -287,7 +287,7 @@ public class warlock {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){
@@ -319,11 +319,11 @@ public class warlock {
 							"space it previously occupied, or the nearest unoccupied\r\n" + 
 							"space. If the target is not a fiend, it takes 10d 10 psychic\r\n" + 
 							"damage as it reels from its horrific experience.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest.\n\n";
 				}
 				else if(subC.equals("great")){
-					descr += "Create Thrall. \nAt 14th level, you gain the ability to infect a humanoid’s\r\n" + 
+					descr += "Create Thrall. \nAt 14th level, you gain the ability to infect a humanoid's\r\n" + 
 							"mind with the alien magic of your patron. You can use\r\n" + 
 							"your action to touch an incapacitated humanoid. That\r\n" + 
 							"creature is then charmed by you until a remove curse\r\n" + 
@@ -340,7 +340,7 @@ public class warlock {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){
@@ -350,7 +350,7 @@ public class warlock {
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){
@@ -385,38 +385,38 @@ public class warlock {
 					"Bewitching Whispers\r\n" + 
 					"Prerequisite: 7th level\r\n" + 
 					"You can cast compulsion once using a warlock spell slot.\r\n" + 
-					"You can’t do so again until you finish a long rest.\n\n" + 
+					"You can't do so again until you finish a long rest.\n\n" + 
 					"Book of Ancient Secrets\r\n" + 
 					"Prerequisite: Pact of the Tome feature\r\n" + 
 					"You can now inscribe magical rituals in your Book of\r\n" + 
 					"Shadows. Choose two 1st-level spells that have the\r\n" + 
-					"ritual tag from any class’s spell list. The spells appear\r\n" + 
-					"in the book and don’t count against the number of spells\r\n" + 
+					"ritual tag from any class's spell list. The spells appear\r\n" + 
+					"in the book and don't count against the number of spells\r\n" + 
 					"you know. With your Book of Shadows in hand, you\r\n" + 
-					"can cast the chosen spells as rituals. You can’t cast the\r\n" + 
-					"spells except as rituals, unless you’ve learned them by\r\n" + 
+					"can cast the chosen spells as rituals. You can't cast the\r\n" + 
+					"spells except as rituals, unless you've learned them by\r\n" + 
 					"some other means. You can also cast a warlock spell\r\n" + 
 					"you know as a ritual if it has the ritual tag.\r\n" + 
 					"On your adventures, you can add other ritual spells to\r\n" + 
 					"your Book of Shadows. When you find such a spell, you\r\n" + 
-					"can add it to the book if the spell’s level is equal to or\r\n" + 
+					"can add it to the book if the spell's level is equal to or\r\n" + 
 					"less than half your warlock level (rounded up) and if you\r\n" + 
 					"can spare the time to transcribe the spell. For each level\r\n" + 
 					"of the spell, the transcription process takes 2 hours and\r\n" + 
 					"costs 50 gp for the rare inks needed to inscribe it.\n\n" + 
 					"Chains of Carceri\r\n" + 
 					"Prerequisite: 15th level, Pact of the Chain feature\r\n" + 
-					"You can cast hold monster at w ill—targeting a celestial,\r\n" + 
-					"fiend, or elemental—without expending a spell slot or\r\n" + 
+					"You can cast hold monster at w ill'targeting a celestial,\r\n" + 
+					"fiend, or elemental'without expending a spell slot or\r\n" + 
 					"material components. You must finish a long rest before\r\n" + 
 					"you can use this invocation on the same creature again.\n\n" + 
-					"Devil’s Sight\r\n" + 
+					"Devil's Sight\r\n" + 
 					"You can see normally in darkness, both magical and\r\n" + 
 					"nonmagical, to a distance of 120 feet.\n\n" + 
 					"Dreadful Word\r\n" + 
 					"Prerequisite: 7th level\r\n" + 
 					"You can cast confusion once using a w arlock spell slot.\r\n" + 
-					"You can’t do so again until you finish a long rest.\n\n" + 
+					"You can't do so again until you finish a long rest.\n\n" + 
 					"Eldritch Sight\r\n" + 
 					"You can cast detect magic at will, without expending\r\n" + 
 					"a spell slot.\n\n" //here
@@ -436,7 +436,7 @@ public class warlock {
 					"plane of existence as you, you can use your action\r\n" + 
 					"on subsequent turns to maintain this connection,\r\n" + 
 					"extending the duration until the end of your next turn.\r\n" + 
-					"While perceiving through the other creature’s senses,\r\n" + 
+					"While perceiving through the other creature's senses,\r\n" + 
 					"you benefit from any special senses possessed by that\r\n" + 
 					"creature, and you are blinded and deafened to your own\r\n" + 
 					"surroundings.\n\n" + 
@@ -455,12 +455,12 @@ public class warlock {
 					"Minions of Chaos\r\n" + 
 					"Prerequisite: 9th level\r\n" + 
 					"You can cast conjure elemental once using a\r\n" + 
-					"warlock spell slot. You can’t do so again until you\r\n" + 
+					"warlock spell slot. You can't do so again until you\r\n" + 
 					"finish a long rest.\n\n" + 
 					"Mire the Mind\r\n" + 
 					"Prerequisite: 5th level\r\n" + 
 					"You can cast slow once using a warlock spell slot. You\r\n" + 
-					"can’t do so again until you finish a long rest.\n\n" + 
+					"can't do so again until you finish a long rest.\n\n" + 
 					"Misty Visions\r\n" + 
 					"You can cast silent image at will, without expending a\r\n" + 
 					"spell slot or material components.\r\n" + 
@@ -480,14 +480,14 @@ public class warlock {
 					"Sculptor of Flesh\r\n" + 
 					"Prerequisite: 7th level\r\n" + 
 					"You can cast polymorph once using a warlock spell slot.\r\n" + 
-					"You can’t do so again until you finish a long rest.\n\n" + 
+					"You can't do so again until you finish a long rest.\n\n" + 
 					"Sign of Ill Omen\r\n" + 
 					"Prerequisite: 5th level\r\n" + 
 					"You can cast bestow curse once using a w arlock spell\r\n" + 
-					"slot. You can’t do so again until you finish a long rest.\n\n" + 
+					"slot. You can't do so again until you finish a long rest.\n\n" + 
 					"Thief of Five Fates\r\n" + 
 					"You can cast bane once using a warlock spell slot. You\r\n" + 
-					"can’t do so again until you finish a long rest.\n\n" + 
+					"can't do so again until you finish a long rest.\n\n" + 
 					"Thirsting Blade\r\n" + 
 					"Prerequisite: 5th level, Pact of the Blade feature\r\n" + 
 					"You can attack with your pact weapon twice, instead of\r\n" + 
@@ -499,9 +499,9 @@ public class warlock {
 					"Voice of the Chain Master\r\n" + 
 					"Prerequisite: Pact of the Chain feature\r\n" + 
 					"You can communicate telepathically with your familiar\r\n" + 
-					"and perceive through your familiar’s senses as long as\r\n" + 
+					"and perceive through your familiar's senses as long as\r\n" + 
 					"you are on the same plane of existence. Additionally,\r\n" + 
-					"while perceiving through your familiar’s senses, you can\r\n" + 
+					"while perceiving through your familiar's senses, you can\r\n" + 
 					"also speak through your familiar in your own voice, even\r\n" + 
 					"if your familiar is normally incapable of speech.\n\n" + 
 					"Whispers of the Grave\r\n" + 

@@ -107,14 +107,14 @@ public class fighter {
 							"more at 15th level.\n\n" + 
 							"Saving Throws. \nSome of your maneuvers require\r\n" + 
 							"your target to make a saving throw to resist the\r\n" + 
-							"maneuver’s effects. The saving throw DC is calculated\r\n" + 
+							"maneuver's effects. The saving throw DC is calculated\r\n" + 
 							"as follows:\r\n" + 
 							"Maneuver save DC = 8 + your proficiency bonus +\r\n" + 
 							"your Strength or Dexterity modifier (your choice)\n\n"
 							+ "Student of War. \nAt 3rd level, you gain proficiency with one type of\r\n" + 
-							"artisan’s tools of your choice.\n"
+							"artisan's tools of your choice.\n"
 							+ "Maneuvers. \nYou learn three maneuvers of your\r\n" + 
-							"choice, which are detailed under “Maneuvers” below.\r\n" + 
+							"choice, which are detailed under 'Maneuvers' below.\r\n" + 
 							"Many maneuvers enhance an attack in some way. You\r\n" + 
 							"can use only one maneuver per attack.\r\n" + 
 							"You learn two additional maneuvers of your choice\r\n" + 
@@ -128,25 +128,25 @@ public class fighter {
 					if(nyeh.equals("yes"))
 					{
 						descr+= "The Maneuvers are as follows:\n"
-							+ "Commander’s Strike. \nWhen you take the Attack\r\n" + 
+							+ "Commander's Strike. \nWhen you take the Attack\r\n" + 
 							"action on your turn, you can forgo one of your attacks\r\n" + 
 							"and use a bonus action to direct one of your companions\r\n" + 
 							"to strike. When you do so, choose a friendly creature\r\n" + 
 							"who can see or hear you and expend one superiority die.\r\n" + 
 							"That creature can immediately use its reaction to make\r\n" + 
 							"one weapon attack, adding the superiority die to the\r\n" + 
-							"attack’s damage roll.\n\n" + 
+							"attack's damage roll.\n\n" + 
 							"Disarming Attack. \nWhen you hit a creature with a\r\n" + 
 							"weapon attack, you can expend one superiority die to\r\n" + 
 							"attempt to disarm the target, forcing it to drop one item\r\n" + 
-							"of your choice that it’s holding. You add the superiority\r\n" + 
-							"die to the attack’s damage roll, and the target must\r\n" + 
+							"of your choice that it's holding. You add the superiority\r\n" + 
+							"die to the attack's damage roll, and the target must\r\n" + 
 							"make a Strength saving throw. On a failed save, it drops\r\n" + 
 							"the object you choose. The object lands at its feet.\n\n" + 
 							"Distracting Strike. \nWhen you hit a creature with a\r\n" + 
 							"weapon attack, you can expend one superiority die to\r\n" + 
 							"distract the creature, giving your allies an opening. You\r\n" + 
-							"add the superiority die to the attack’s damage roll. The\r\n" + 
+							"add the superiority die to the attack's damage roll. The\r\n" + 
 							"next attack roll against the target by an attacker other\r\n" + 
 							"than you has advantage if the attack is made before the\r\n" + 
 							"start of your next turn.\n\n" + 
@@ -158,11 +158,11 @@ public class fighter {
 							"one creature within 5 feet of you as your target. You\r\n" + 
 							"have advantage on your next attack roll against that\r\n" + 
 							"creature. If that attack hits, add the superiority die to the\r\n" + 
-							"attack’s damage roll.\n\n" + 
+							"attack's damage roll.\n\n" + 
 							"Goading Attack. \nWhen you hit a creature with a\r\n" + 
 							"weapon attack, you can expend one superiority die to\r\n" + 
 							"attempt to goad the target into attacking you. You add\r\n" + 
-							"the superiority die to the attack’s damage roll, and\r\n" + 
+							"the superiority die to the attack's damage roll, and\r\n" + 
 							"the target must make a W isdom saving throw. On a\r\n" + 
 							"failed save, the target has disadvantage on all attack\r\n" + 
 							"rolls against targets other than you until the end of\r\n" + 
@@ -170,19 +170,19 @@ public class fighter {
 							"Lunging Attack. \nWhen you make a melee weapon\r\n" + 
 							"attack on your turn, you can expend one superiority die\r\n" + 
 							"to increase your reach for that attack by 5 feet. If you hit,\r\n" + 
-							"you add the superiority die to the attack’s damage roll.\n\n"
+							"you add the superiority die to the attack's damage roll.\n\n"
 							+ "Maneuvering Attack. \nWhen you hit a creature with\r\n" + 
 							"a weapon attack, you can expend one superiority\r\n" + 
 							"die to maneuver one of your comrades into a more\r\n" + 
 							"advantageous position. You add the superiority die to the\r\n" + 
-							"attack’s damage roll, and you choose a friendly creature\r\n" + 
+							"attack's damage roll, and you choose a friendly creature\r\n" + 
 							"who can see or hear you. That creature can use its\r\n" + 
 							"reaction to move up to half its speed without provoking\r\n" + 
 							"opportunity attacks from the target of your attack.\n\n" + 
 							"Menacing Attack. \nWhen you hit a creature with a\r\n" + 
 							"weapon attack, you can expend one superiority die to\r\n" + 
 							"attempt to frighten the target. You add the superiority\r\n" + 
-							"die to the attack’s damage roll, and the target must\r\n" + 
+							"die to the attack's damage roll, and the target must\r\n" + 
 							"make a W isdom saving throw. On a failed save, it is\r\n" + 
 							"frightened of you until the end of your next turn.\n\n" + 
 							"Parry. \nWhen another creature damages you with a\r\n" + 
@@ -224,7 +224,7 @@ public class fighter {
 							"Trip Attack. \nWhen you hit a creature with a weapon\r\n" + 
 							"attack, you can expend one superiority die to attempt\r\n" + 
 							"to knock the target down. You add the superiority die\r\n" + 
-							"to the attack’s damage roll, and if the target is Large or\r\n" + 
+							"to the attack's damage roll, and if the target is Large or\r\n" + 
 							"smaller, it must make a Strength saving throw. On a\r\n" + 
 							"failed save, you knock the target prone.\n\n";
 					}
@@ -238,7 +238,7 @@ public class fighter {
 							"reach throughout the ritual, at the conclusion of which\r\n" + 
 							"you touch the weapon and forge the bond.\r\n" + 
 							"Once you have bonded a weapon to yourself, you\r\n" + 
-							"can’t be disarmed of that weapon unless you are\r\n" + 
+							"can't be disarmed of that weapon unless you are\r\n" + 
 							"incapacitated. If it is on the same plane of existence,\r\n" + 
 							"you can summon that weapon as a bonus action on your\r\n" + 
 							"turn, causing it to teleport instantly to your hand.\r\n" + 
@@ -251,7 +251,7 @@ public class fighter {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){
@@ -261,7 +261,7 @@ public class fighter {
 			else if(point == 6){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 7){
@@ -269,7 +269,7 @@ public class fighter {
 				if(subC.equals("champion")){
 					descr += "Remarkable Athlete. \nStarting at 7th level, you can add half your proficiency\r\n" + 
 							"bonus (round up) to any Strength, Dexterity, or\r\n" + 
-							"Constitution check you make that doesn’t already use\r\n" + 
+							"Constitution check you make that doesn't already use\r\n" + 
 							"your proficiency bonus.\r\n" + 
 							"In addition, when you make a running long jump, the\r\n" + 
 							"distance you can cover increases by a number of feet\r\n" + 
@@ -282,13 +282,13 @@ public class fighter {
 							"capabilities compared to your own. The DM tells you if\r\n" + 
 							"the creature is your equal, superior, or inferior in regard\r\n" + 
 							"to two of the following characteristics of your choice:\r\n"
-							+ "• Strength score\r\n" + 
-							"• Dexterity score\r\n" + 
-							"• Constitution score\r\n" + 
-							"• Armor Class\r\n" + 
-							"• Current hit points\r\n" + 
-							"• Total class levels (if any)\r\n" + 
-							"• Fighter class levels (if any)\n\n";
+							+ "> Strength score\r\n" + 
+							"> Dexterity score\r\n" + 
+							"> Constitution score\r\n" + 
+							"> Armor Class\r\n" + 
+							"> Current hit points\r\n" + 
+							"> Total class levels (if any)\r\n" + 
+							"> Fighter class levels (if any)\n\n";
 				}
 				else if(subC.equals("eldritch knight")){
 					descr += "War Magic. \nBeginning at 7th level, when you use your action to\r\n" + 
@@ -299,13 +299,13 @@ public class fighter {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){
 				descr += "Indomitable. \nBeginning at 9th level, you can reroll a saving throw that\r\n" + 
 						"you fail. If you do so, you must use the new roll, and you\r\n" + 
-						"can’t use this feature again until you finish a long rest.\n\n";
+						"can't use this feature again until you finish a long rest.\n\n";
 			}
 			else if(point == 10){
 				//path
@@ -319,7 +319,7 @@ public class fighter {
 				}
 				else if(subC.equals("eldritch knight")){
 					descr += "Eldritch Strike. \nAt 10th level, you learn how to make your weapon\r\n" + 
-							"strikes undercut a creature’s resistance to your spells.\r\n" + 
+							"strikes undercut a creature's resistance to your spells.\r\n" + 
 							"When you hit a creature with a weapon attack, that\r\n" + 
 							"creature has disadvantage on the next saving throw\r\n" + 
 							"it makes against a spell you cast before the end of\r\n" + 
@@ -332,7 +332,7 @@ public class fighter {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){ 
@@ -342,7 +342,7 @@ public class fighter {
 			else if(point == 14){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 15){
@@ -366,7 +366,7 @@ public class fighter {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){
@@ -378,7 +378,7 @@ public class fighter {
 					descr += "Survivor. \nAt 18th level, you attain the pinnacle of resilience in\r\n" + 
 							"battle. At the start of each of your turns, you regain hit\r\n" + 
 							"points equal to 5 + your Constitution modifier if you\r\n" + 
-							"have no more than half of your hit points left. You don’t\r\n" + 
+							"have no more than half of your hit points left. You don't\r\n" + 
 							"gain this benefit if you have 0 hit points.\n\n";
 				}
 				else if(subC.equals("battle master")){
@@ -394,7 +394,7 @@ public class fighter {
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){

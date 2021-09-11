@@ -675,7 +675,7 @@ public class xShort {
 			descr = "Proficiencies:\n"
 					+ "Armor: None\r\n" + 
 					"Weapons: Simple weapons, shortswords\r\n" + 
-					"Tools: Choose one type of artisan’s tools or one\r\n" + 
+					"Tools: Choose one type of artisan's tools or one\r\n" + 
 					"musical instrument\r\n" + 
 					"Saving Throws: Strength, Dexterity\r\n" + 
 					"Skills: Choose two from Acrobatics, Athletics, History,\r\n" + 
@@ -1017,7 +1017,7 @@ public class xShort {
 					+ "Armor: Light armor\r\n" + 
 					"Weapons: Simple weapons, hand crossbows,\r\n" + 
 					"longswords, rapiers, shortswords\r\n" + 
-					"Tools: Thieves’ tools\r\n" + 
+					"Tools: Thieves' tools\r\n" + 
 					"Saving Throws: Dexterity. Intelligence\r\n" + 
 					"Skills: Choose four from Acrobatics, Athletics,\r\n" + 
 					"Deception. Insight, Intimidation, Investigation,\r\n" + 

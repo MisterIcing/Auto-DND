@@ -163,6 +163,7 @@ public class Runner { //TODO unadded ASI's will not be taken into account for an
 			System.out.println("\nWould you like armor and weapon tables?");
 			if(in.nextLine().trim().toLowerCase().equals("yes")){
 				System.out.println(me.getTables());
+				end += "\n\n" + me.getTables();
 			}
 			
 			System.out.println("Would you like to save this?");

@@ -42,20 +42,20 @@ public class barbarian {
 						"In battle, you fight with primal ferocity. On your turn,\r\n" + 
 						"you can enter a rage as a bonus action.\r\n" + 
 						"While raging, you gain the following benefits if you\r\n" + 
-						"aren’t w earing heavy armor:\r\n" + 
-						"• You have advantage on Strength checks and Strength\r\n" + 
+						"aren't w earing heavy armor:\r\n" + 
+						"> You have advantage on Strength checks and Strength\r\n" + 
 						"saving throws.\r\n" + 
-						"• When you make a melee weapon attack using\r\n" + 
+						"> When you make a melee weapon attack using\r\n" + 
 						"Strength, you gain a bonus to the damage roll that\r\n" + 
 						"increases as you gain levels as a barbarian, as shown\r\n" + 
 						"in the Rage Damage column of the Barbarian table.\r\n" + 
-						"• You have resistance to bludgeoning, piercing, and\r\n" + 
+						"> You have resistance to bludgeoning, piercing, and\r\n" + 
 						"slashing damage.\r\n" + 
-						"If you are able to cast spells, you can’t cast them or\r\n" + 
+						"If you are able to cast spells, you can't cast them or\r\n" + 
 						"concentrate on them while raging.\r\n" + 
 						"Your rage lasts for 1 minute. It ends early if you are\r\n" + 
 						"knocked unconscious or if your turn ends and you\r\n" + 
-						"haven’t attacked a hostile creature since your last turn\r\n" + 
+						"haven't attacked a hostile creature since your last turn\r\n" + 
 						"or taken damage since then. You can also end your rage\r\n" + 
 						"on your turn as a bonus action.\r\n" + 
 						"Once you have raged the number of times shown\r\n" + 
@@ -77,11 +77,11 @@ public class barbarian {
 						"turn, but attack rolls against you have advantage until\r\n" + 
 						"your next turn.\n\n" + 
 						"Danger Sense. At 2nd level, you gain an uncanny sense of when things\r\n" + 
-						"nearby aren’t as they should be, giving you an edge\r\n" + 
+						"nearby aren't as they should be, giving you an edge\r\n" + 
 						"when you dodge away from danger.\r\n" + 
 						"You have advantage on Dexterity saving throws\r\n" + 
 						"against effects that you can see, such as traps and spells.\r\n" + 
-						"To gain this benefit, you can’t be blinded, deafened, or\r\n" + 
+						"To gain this benefit, you can't be blinded, deafened, or\r\n" + 
 						"incapacitated.\n\n";
 			}
 			else if(point == 3)//path
@@ -109,7 +109,7 @@ public class barbarian {
 							+ "Totem Spirit. \nAt 3rd level, when you adopt this path, you choose a\r\n" + 
 							"totem spirit and gain its feature. You must make or\r\n" + 
 							"acquire a physical totem object- an amulet or similar\r\n" + 
-							"adornment—that incorporates fur or feathers, claws,\r\n" + 
+							"adornment'that incorporates fur or feathers, claws,\r\n" + 
 							"teeth, or b ones of the totem animal. At your option, you\r\n" + 
 							"also gain minor physical attributes that are reminiscent\r\n" + 
 							"of your totem spirit. For example, if you have a bear\r\n" + 
@@ -120,16 +120,16 @@ public class barbarian {
 							"listed here but more appropriate to your homeland.\r\n" + 
 							"For example, you could choose a hawk or vulture in\r\n" + 
 							"place of an eagle.\r\n" + 
-							"• Bear. While raging, you have resistance to all damage\r\n" + 
+							"> Bear. While raging, you have resistance to all damage\r\n" + 
 							"except psychic damage. The spirit of the bear makes you\r\n" + 
 							"tough enough to stand up to any punishment.\r\n" + 
-							"• Eagle. While you're raging and aren’t wearing\r\n" + 
+							"> Eagle. While you're raging and aren't wearing\r\n" + 
 							"heavy armor, other creatures have disadvantage on\r\n" + 
 							"opportunity attack rolls against you, and you can use the\r\n" + 
 							"Dash action as a bonus action on your turn. The spirit\r\n" + 
 							"of the eagle makes you into a predator w ho can weave\r\n" + 
 							"through the fray with ease.\r\n" + 
-							"• Wolf, While you're raging, your friends have\r\n" + 
+							"> Wolf, While you're raging, your friends have\r\n" + 
 							"advantage on melee attack rolls against any creature\r\n" + 
 							"within 5 feet of you that is hostile to you. The spirit of\r\n" + 
 							"the wolf makes you a leader of hunters.\n\n";
@@ -139,7 +139,7 @@ public class barbarian {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5)
@@ -147,13 +147,13 @@ public class barbarian {
 				descr +="Extra Attack. \nBeginning at 5th level, you can attack twice, instead of\r\n" + 
 						"once, whenever you take the Attack action on your turn.\n\n"
 						+ "Fast Movement. Starting at 5th level, your speed increases by 10 feet\r\n" + 
-						"while you aren’t w earing heavy armor.\n\n";
+						"while you aren't w earing heavy armor.\n\n";
 			}
 			else if(point == 6)
 			{
 				if(subC.equals("berserker"))
 				{
-					descr += "Mindless Rage. \nBeginning at 6th level, you can’t be charmed or\r\n" + 
+					descr += "Mindless Rage. \nBeginning at 6th level, you can't be charmed or\r\n" + 
 							"frightened while raging. If you are charmed or\r\n" + 
 							"frightened when you enter your rage, the effect is\r\n" + 
 							"suspended for the duration of the rage.\n\n";
@@ -163,17 +163,17 @@ public class barbarian {
 					descr += "Aspect of the Beast. \nAt 6th level, you gain a magical benefit based on the\r\n" + 
 							"totem animal of your choice. You can choose the same\r\n" + 
 							"animal you selected at 3rd level or a different one.\r\n" + 
-							"• Bear. You gain the might of a bear. Your carrying\r\n" + 
+							"> Bear. You gain the might of a bear. Your carrying\r\n" + 
 							"capacity (including maximum load and maximum lift)\r\n" + 
 							"is doubled, and you have advantage on Strength checks\r\n" + 
 							"made to push, pull, lift, or break objects.\r\n" + 
-							"• Eagle. You gain the eyesight of an eagle. You can\r\n" + 
+							"> Eagle. You gain the eyesight of an eagle. You can\r\n" + 
 							"see up to 1 mile away with no difficulty, able to discern\r\n" + 
 							"even fine details as though looking at something no\r\n" + 
 							"more than 100 feet away from you. Additionally, dim\r\n" + 
 							"light doesn't impose disadvantage on your Wisdom\r\n" + 
 							"(Perception) checks.\r\n" + 
-							"• Wolf, You gain the hunting sensibilities of a wolf. You\r\n" + 
+							"> Wolf, You gain the hunting sensibilities of a wolf. You\r\n" + 
 							"can track other creatures while traveling at a fast pace,\r\n" + 
 							"and you can move stealthily while traveling at a normal\r\n" + 
 							"pace (see chapter 8 for rules on travel pace).\n\n";
@@ -184,7 +184,7 @@ public class barbarian {
 				descr +="Feral Instinct. \nBy 7th level, your instincts are so honed that you have\r\n" + 
 						"advantage on initiative rolls.\r\n" + 
 						"Additionally, if you are surprised at the beginning of\r\n" + 
-						"combat and aren’t incapacitated, you can act normally\r\n" + 
+						"combat and aren't incapacitated, you can act normally\r\n" + 
 						"on your first turn, but only if you enter your rage before\r\n" + 
 						"doing anything else on that turn.\n\n";
 			}
@@ -192,7 +192,7 @@ public class barbarian {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9)
@@ -233,7 +233,7 @@ public class barbarian {
 			{
 				descr +="Relentless Rage. \nStarting at 11th level, your rage can keep you fighting\r\n" + 
 						"despite grievous w ounds. If you drop to 0 hit points\r\n" + 
-						"while you’re raging and don’t die outright, you can make\r\n" + 
+						"while you're raging and don't die outright, you can make\r\n" + 
 						"a DC 10 Constitution saving throw. If you succeed, you\r\n" + 
 						"drop to 1 hit point instead.\r\n" + 
 						"Each time you use this feature after the first, the DC\r\n" + 
@@ -244,7 +244,7 @@ public class barbarian {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13)
@@ -268,16 +268,16 @@ public class barbarian {
 					descr +="Totemic Attunement. \nAt 14th level, you gain a magical benefit based on a\r\n" + 
 							"totem animal of your choice. You can choose the same\r\n" + 
 							"animal you selected previously or a different one.\r\n" + 
-							"• Bear, While you’re raging, any creature within 5 feet\r\n" + 
-							"of you that’s hostile to you has disadvantage on attack\r\n" + 
+							"> Bear, While you're raging, any creature within 5 feet\r\n" + 
+							"of you that's hostile to you has disadvantage on attack\r\n" + 
 							"rolls against targets other than you or another character\r\n" + 
 							"with this feature. An enemy is immune to this effect if it\r\n" + 
-							"can’t see or hear you or if it can’t be frightened.\r\n" + 
-							"• Eagle. While raging, you have a flying speed equal to\r\n" + 
+							"can't see or hear you or if it can't be frightened.\r\n" + 
+							"> Eagle. While raging, you have a flying speed equal to\r\n" + 
 							"your current walking speed. This benefit works only in\r\n" + 
 							"short bursts; you fall if you end your turn in the air and\r\n" + 
 							"nothing else is holding you aloft.\r\n" + 
-							"• Wolf. While you’re raging, you can use a bonus action\r\n" + 
+							"> Wolf. While you're raging, you can use a bonus action\r\n" + 
 							"on your turn to knock a Large or smaller creature prone\r\n" + 
 							"when you hit it with melee w eapon attack.\n\n";
 				}
@@ -292,7 +292,7 @@ public class barbarian {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17)
@@ -311,7 +311,7 @@ public class barbarian {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20)

@@ -55,18 +55,18 @@ public class cleric {
 							+ "Disciple of Life. \nAlso starting at 1st level, your healing spells are more\r\n" + 
 							"effective. Whenever you use a spell of 1st level or higher\r\n" + 
 							"to restore hit points to a creature, the creature regains\r\n" + 
-							"additional hit points equal to 2+ the spell’s level.\n\n";
+							"additional hit points equal to 2+ the spell's level.\n\n";
 				}
 				else if(subC.equals("light")){
 					descr +="Spells: Burning hands and Faerie fire\n\n"
 							+ "Bonus Cantip. \nWhen you choose this domain at 1st level, you gain the\r\n" + 
-							"light cantrip if you don’t already know it.\n\n"
+							"light cantrip if you don't already know it.\n\n"
 							+ "Warding Flare. \nAlso at 1st level, you can interpose divine light between\r\n" + 
 							"yourself and an attacking enemy. When you are attacked\r\n" + 
 							"by a creature within 30 feet of you that you can see,\r\n" + 
 							"you can use your reaction to impose disadvantage on\r\n" + 
 							"the attack roll, causing light to flare before the attacker\r\n" + 
-							"before it hits or misses. An attacker that can’t be blinded\r\n" + 
+							"before it hits or misses. An attacker that can't be blinded\r\n" + 
 							"is immune to this feature.\r\n" + 
 							"You can use this feature a number of times equal to\r\n" + 
 							"your W isdom modifier (a minimum of once). \r\n"
@@ -134,11 +134,11 @@ public class cleric {
 						"saving throw. If the creature fails its saving throw, it is\r\n" + 
 						"turned for 1 minute or until it takes any damage.\r\n" + 
 						"A turned creature must spend its turns trying to move\r\n" + 
-						"as far away from you as it can, and it can’t willingly\r\n" + 
-						"move to a space within 30 feet of you. It also can’t take\r\n" + 
+						"as far away from you as it can, and it can't willingly\r\n" + 
+						"move to a space within 30 feet of you. It also can't take\r\n" + 
 						"reactions. For its action, it can use only the Dash action\r\n" + 
 						"or try to escape from an effect that prevents it from\r\n" + 
-						"moving. If there’s nowhere to move, the creature can use\r\n" + 
+						"moving. If there's nowhere to move, the creature can use\r\n" + 
 						"the Dodge action.\n\n";
 				
 				if(subC.equals("knowledge")){
@@ -155,7 +155,7 @@ public class cleric {
 							"points equal to five times your cleric level. Choose any\r\n" + 
 							"creatures within 30 feet of you, and divide those hit\r\n" + 
 							"points among them. This feature can restore a creature\r\n" + 
-							"to no more than half of its hit point maximum. You can’t\r\n" + 
+							"to no more than half of its hit point maximum. You can't\r\n" + 
 							"use this feature on an undead or a construct.\n\n";
 				}
 				else if(subC.equals("light")){
@@ -200,7 +200,7 @@ public class cleric {
 							"turn, you can move the illusion up to 30 feet to a space\r\n" + 
 							"you can see, but it must remain within 120 feet of you.\r\n" + 
 							"For the duration, you can cast spells as though you\r\n" + 
-							"were in the illusion’s space, but you must use your own\r\n" + 
+							"were in the illusion's space, but you must use your own\r\n" + 
 							"senses. Additionally, when both you and your illusion\r\n" + 
 							"are within 5 feet of a creature that can see the illusion,\r\n" + 
 							"you have advantage on attack rolls against that creature,\r\n" + 
@@ -228,7 +228,7 @@ public class cleric {
 			else if(point == 4){ 
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){//magic
@@ -251,12 +251,12 @@ public class cleric {
 				
 				if(subC.equals("knowledge")){
 					descr += "Channel Divinity: Read Thoughts. \nAt 6th level, you can use your Channel Divinity to read a\r\n" + 
-							"creature’s thoughts. You can then use your access to the\r\n" + 
-							"creature’s mind to command it.\r\n"
+							"creature's thoughts. You can then use your access to the\r\n" + 
+							"creature's mind to command it.\r\n"
 							+ "As an action, choose one creature that you can see\r\n" + 
 							"within 60 feet of you. That creature must make a\r\n" + 
 							"Wisdom saving throw. If the creature succeeds on the\r\n" + 
-							"saving throw, you can’t use this feature on it again until\r\n" + 
+							"saving throw, you can't use this feature on it again until\r\n" + 
 							"you finish a long rest.\r\n" + 
 							"If the creature fails its save, you can read its surface\r\n" + 
 							"thoughts (those foremost in its mind, reflecting its\r\n" + 
@@ -273,7 +273,7 @@ public class cleric {
 							"others heal you as well. When you cast a spell of 1st\r\n" + 
 							"level or higher that restores hit points to a creature\r\n" + 
 							"other than you, you regain hit points equal to 2 + the\r\n" + 
-							"spell’s level.\n\n";
+							"spell's level.\n\n";
 				}
 				else if(subC.equals("light")){//fix
 					descr +="Improved Flare. \nStarting at 6th level, you can also use your Warding\r\n" + 
@@ -318,7 +318,7 @@ public class cleric {
 			else if(point == 8){//path
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n"
 						+ "Destroy Undead (Override). \nCR threshold increased to 1 CR or lower.\n\n";
 			
@@ -349,13 +349,13 @@ public class cleric {
 			else if(point == 10){
 				descr +="Divine Intervention. \nBeginning at 10th level, you can call on your deity to\r\n" + 
 						"intervene on your behalf when your need is great.\r\n" + 
-						"Imploring your deity’s aid requires you to use your\r\n" + 
+						"Imploring your deity's aid requires you to use your\r\n" + 
 						"action. Describe the assistance you seek, and roll\r\n" + 
 						"percentile dice. If you roll a number equal to or lower\r\n" + 
 						"than your cleric level, your deity intervenes. The DM\r\n" + 
 						"chooses the nature of the intervention; the effect of any\r\n" + 
 						"cleric spell or cleric domain spell w ould be appropriate.\r\n" + 
-						"If your deity intervenes, you can’t use this feature\r\n" + 
+						"If your deity intervenes, you can't use this feature\r\n" + 
 						"again for 7 days. Otherwise, you can use it again after\r\n" + 
 						"you finish a long rest.\n\n";
 			}
@@ -365,7 +365,7 @@ public class cleric {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 14){
@@ -374,7 +374,7 @@ public class cleric {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){//path
@@ -389,10 +389,10 @@ public class cleric {
 							"number of minutes equal to your W isdom score and\r\n" + 
 							"must maintain concentration during that time, as if you\r\n" + 
 							"were casting a spell.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a short or long rest.\r\n" + 
 							"Object Reading. Holding an object as you meditate,\r\n" + 
-							"you can see visions of the object’s previous owner.\r\n" + 
+							"you can see visions of the object's previous owner.\r\n" + 
 							"After meditating for 1 minute, you learn how the owner\r\n" + 
 							"acquired and lost the object, as w ell as the most recent\r\n" + 
 							"significant event involving the object and that owner.\r\n" + 
@@ -459,7 +459,7 @@ public class cleric {
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){

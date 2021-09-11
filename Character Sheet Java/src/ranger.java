@@ -64,20 +64,20 @@ public class ranger {
 						"or the Underdark. When you make an Intelligence or\r\n" + 
 						"Wisdom check related to your favored terrain, your\r\n" + 
 						"proficiency bonus is doubled if you are using a skill that\r\n" + 
-						"you’re proficient in.\r\n" + 
+						"you're proficient in.\r\n" + 
 						"While traveling for an hour or m ore in your favored\r\n" + 
 						"terrain, you gain the following benefits:\r\n" + 
-						"• Difficult terrain doesn’t slow your group’s travel.\r\n" + 
-						"• Your group can’t become lost except by magical\r\n" + 
+						"> Difficult terrain doesn't slow your group's travel.\r\n" + 
+						"> Your group can't become lost except by magical\r\n" + 
 						"means.\r\n" + 
-						"• Even when you are engaged in another activity while\r\n" + 
+						"> Even when you are engaged in another activity while\r\n" + 
 						"traveling (such as foraging, navigating, or tracking),\r\n" + 
 						"you remain alert to danger.\r\n" + 
-						"• If you are traveling alone, you can move stealthily at\r\n" + 
+						"> If you are traveling alone, you can move stealthily at\r\n" + 
 						"a normal pace.\r\n" + 
-						"• When you forage, you find twice as much food as you\r\n" + 
+						"> When you forage, you find twice as much food as you\r\n" + 
 						"normally would.\r\n" + 
-						"• While tracking other creatures, you also learn their\r\n" + 
+						"> While tracking other creatures, you also learn their\r\n" + 
 						"exact number, their sizes, and how long ago they\r\n" + 
 						"passed through the area.\n\n";
 			}
@@ -114,7 +114,7 @@ public class ranger {
 						"types of creatures are present within 1 mile of you (or\r\n" + 
 						"within up to 6 miles if you are in your favored terrain):\r\n" + 
 						"aberrations, celestials, dragons, elementals, fey, fiends,\r\n" + 
-						"and undead. This feature doesn’t reveal the creatures’\r\n" + 
+						"and undead. This feature doesn't reveal the creatures'\r\n" + 
 						"location or number.\n\n";
 				
 				if(subC.equals("hunter")){
@@ -123,7 +123,7 @@ public class ranger {
 							"Colossus Slayer. \nYour tenacity can w ear down\r\n" + 
 							"the most potent foes. When you hit a creature with a\r\n" + 
 							"weapon attack, the creature takes an extra 1d8 damage\r\n" + 
-							"if it’s below its hit point maximum. You can deal this\r\n" + 
+							"if it's below its hit point maximum. You can deal this\r\n" + 
 							"extra damage only once per turn.\r\n" + 
 							"Giant Killer. \nWhen a Large or larger creature within\r\n" + 
 							"5 feet of you hits or misses you with an attack, you can\r\n" + 
@@ -142,12 +142,12 @@ public class ranger {
 							"Medium and that has a challenge rating of 1/4 or lower\r\n" + 
 							"(appendix D presents statistics for the hawk, mastiff,\r\n" + 
 							"and panther as examples). Add your proficiency bonus\r\n" + 
-							"to the beast’s AC, attack rolls, and damage rolls, as well\r\n" + 
+							"to the beast's AC, attack rolls, and damage rolls, as well\r\n" + 
 							"as to any saving throws and skills it is proficient in. Its\r\n" + 
 							"hit point maximum equals its normal maximum or four\r\n" + 
 							"times your ranger level, whichever is higher.\r\n" + 
 							"The beast obeys your commands as best as it can. It\r\n" + 
-							"takes its turn on your initiative, though it doesn’t take an\r\n" + 
+							"takes its turn on your initiative, though it doesn't take an\r\n" + 
 							"action unless you command it to. On your turn, you can\r\n" + 
 							"verbally command the beast where to move (no action\r\n" + 
 							"required by you). You can use your action to verbally\r\n" + 
@@ -159,14 +159,14 @@ public class ranger {
 							"the beast, you can move stealthily at a normal pace.\r\n" + 
 							"If the beast dies, you can obtain another one by\r\n" + 
 							"spending 8 hours magically bonding with another beast\r\n" + 
-							"that isn’t hostile to you, either the same type of beast as\r\n" + 
+							"that isn't hostile to you, either the same type of beast as\r\n" + 
 							"before or a different one.\n\n";
 				}
 			}
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){
@@ -193,7 +193,7 @@ public class ranger {
 				}
 				else if(subC.equals("beast master")){
 					descr += "Exceptional Training. \nBeginning at 7th level, on any of your turns when\r\n" + 
-							"your beast companion doesn’t attack, you can use a\r\n" + 
+							"your beast companion doesn't attack, you can use a\r\n" + 
 							"bonus action to command the beast to take the Dash,\r\n" + 
 							"Disengage, Dodge, or Help action on its turn.\n\n";
 				}
@@ -201,7 +201,7 @@ public class ranger {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n"
 						+ "Land's Stride. \nStarting at 8th level, moving through nonmagical\r\n" + 
 						"difficult terrain costs you no extra movement. You can\r\n" + 
@@ -235,7 +235,7 @@ public class ranger {
 							"of your choice.\r\n" + 
 							"Volley. \nYou can use your action to make a ranged\r\n" + 
 							"attack against any number of creatures within 10 feet\r\n" + 
-							"of a point you can see within your w eapon’s range. You\r\n" + 
+							"of a point you can see within your w eapon's range. You\r\n" + 
 							"must have ammunition for each target, as normal, and\r\n" + 
 							"you make a separate attack roll for each target.\r\n" + 
 							"Whirlwind Attack. \nYou can use your action to make a\r\n" + 
@@ -251,7 +251,7 @@ public class ranger {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){}
@@ -259,7 +259,7 @@ public class ranger {
 				descr += "Favored Enemy (Improvement). \nYou choose one additional favored enemy, as well as\r\n" + 
 						"an associated language.\n\n"
 						+ "Vanish. \nStarting at 14th level, you can use the Hide action as a\r\n" + 
-						"bonus action on your turn. Also, you can’t be tracked by\r\n" + 
+						"bonus action on your turn. Also, you can't be tracked by\r\n" + 
 						"nonmagical means, unless you choose to leave a trail.\n\n";
 			}
 			else if(point == 15){//path
@@ -267,7 +267,7 @@ public class ranger {
 					descr += "Superior Hunter's Defense. \nAt 15th level, you gain one of the following features\r\n" + 
 							"of your choice.\r\n" + 
 							"Evasion. \nYou can nimbly dodge out of the way of\r\n" + 
-							"certain area effects, such as a red dragon’s fiery breath\r\n" + 
+							"certain area effects, such as a red dragon's fiery breath\r\n" + 
 							"or a lightning bolt spell. When you are subjected to an\r\n" + 
 							"effect that allows you to make a Dexterity saving throw\r\n" + 
 							"to take only half damage, you instead take no damage\r\n" +
@@ -279,7 +279,7 @@ public class ranger {
 							"another creature (other than itself) of your choice.\r\n" + 
 							"Uncanny Dodge. \nWhen an attacker that you can see\r\n" + 
 							"hits you with an attack, you can use your reaction to\r\n" + 
-							"halve the attack’s damage against you.";
+							"halve the attack's damage against you.";
 				}
 				else if(subC.equals("beast master")){
 					descr += "Share Spells. \nBeginning at 15th level, when you cast a spell targeting\r\n" + 
@@ -290,24 +290,24 @@ public class ranger {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){}
 			else if(point == 18){
 				descr += "Feral Senses. \nAt 18th level, you gain preternatural senses that help\r\n" + 
-						"you fight creatures you can’t see. When you attack a\r\n" + 
-						"creature you can’t see, your inability to see it doesn’t\r\n" + 
+						"you fight creatures you can't see. When you attack a\r\n" + 
+						"creature you can't see, your inability to see it doesn't\r\n" + 
 						"impose disadvantage on your attack rolls against it.\r\n" + 
 						"You are also aware of the location of any invisible\r\n" + 
 						"creature within 30 feet of you, provided that the\r\n" + 
-						"creature isn’t hidden from you and you aren’t\r\n" + 
+						"creature isn't hidden from you and you aren't\r\n" + 
 						"blinded or deafened.\n\n";
 			}
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){

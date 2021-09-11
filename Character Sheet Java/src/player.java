@@ -36,12 +36,13 @@ public class player {
 	int aNum = 0;
 	int subNum = 0;
 	
-	public player(ArrayList<Integer> stats, String clss, int level, boolean abb, boolean hug)
+ 	public player(ArrayList<Integer> stats, String clss, int level, boolean abb, boolean hug)
 	{
 		nStats = stats;
 		nClss = clss;
 		nLevel = level;
 		
+		this.getBns();
 		System.out.println("Pick a race: Dwarf, Elf, Halfling, Human, Dragonborn, Gnome, "
 				+ "Half-Elf, Half-Orc, or Tiefling");
 		if(hug == true)
@@ -627,7 +628,7 @@ public class player {
 		//TODO someone needs to check the math
 		if(nClss.equals("barbarian"))
 		{
-			health = 12 + Integer.parseInt(z.toInt(con));
+			health = 12 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*12) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Constitution";
@@ -728,7 +729,7 @@ public class player {
 		}
 		else if(nClss.equals("bard"))
 		{
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Dexterity & Charisma";
@@ -796,7 +797,7 @@ public class player {
 				scale = 14 + 2;
 			int leather = 11 + Integer.parseInt(init);
 			int chain = 16;
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
@@ -870,7 +871,7 @@ public class player {
 		}
 		else if(nClss.equals("druid"))
 		{
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Intelligence & Wisdom";
@@ -964,7 +965,7 @@ public class player {
 		else if(nClss.equals("fighter")) 
 		{
 			int leather = 11 + Integer.parseInt(init);
-			health = 10 + Integer.parseInt(z.toInt(con));
+			health = 10 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Constitution";
@@ -1110,7 +1111,7 @@ public class player {
 		}
 		else if(nClss.equals("monk"))
 		{
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Dexterity";
@@ -1167,7 +1168,7 @@ public class player {
 		}
 		else if(nClss.equals("paladin"))
 		{
-			health = 10 + Integer.parseInt(z.toInt(con));
+			health = 10 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
@@ -1345,7 +1346,7 @@ public class player {
 				scale = 14 + Integer.parseInt(init);
 			else
 				scale = 14 + 2;
-			health = 10 + Integer.parseInt(z.toInt(con));
+			health = 10 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Dexterity";
@@ -1400,7 +1401,7 @@ public class player {
 		}
 		else if(nClss.equals("rogue"))
 		{
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Dexterity & Intelligence";
@@ -1431,7 +1432,7 @@ public class player {
 		}
 		else if(nClss.equals("sorcerer"))
 		{
-			health = 6 + Integer.parseInt(z.toInt(con));
+			health = 6 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*6) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Constitution & Charisma";
@@ -1490,7 +1491,7 @@ public class player {
 		}
 		else if(nClss.equals("warlock"))
 		{
-			health = 8 + Integer.parseInt(z.toInt(con));
+			health = 8 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
@@ -1551,7 +1552,7 @@ public class player {
 		}
 		else if(nClss.equals("wizard"))	
 		{
-			health = 6 + Integer.parseInt(z.toInt(con));
+			health = 6 + Integer.parseInt(con);
 			if(nLevel > 1)
 				health += ((Math.random()*6) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Itelligence & Wisdom";

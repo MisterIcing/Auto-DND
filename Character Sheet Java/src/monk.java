@@ -31,7 +31,7 @@ public class monk {
 		descr = "Proficiencies:\n"
 				+ "Armor: None\r\n" + 
 				"Weapons: Simple weapons, shortswords\r\n" + 
-				"Tools: Choose one type of artisan’s tools or one\r\n" + 
+				"Tools: Choose one type of artisan's tools or one\r\n" + 
 				"musical instrument\r\n" + 
 				"Saving Throws: Strength, Dexterity\r\n" + 
 				"Skills: Choose two from Acrobatics, Athletics, History,\r\n" + 
@@ -46,19 +46,19 @@ public class monk {
 						+ "Martial Arts. \nAt 1st level, your practice of martial arts gives you\r\n" + 
 						"mastery of combat styles that use unarmed strikes and\r\n" + 
 						"monk weapons, which are shortswords and any simple\r\n" + 
-						"melee weapons that don’t have the two-handed or\r\n" + 
+						"melee weapons that don't have the two-handed or\r\n" + 
 						"heavy property.\r\n" + 
 						"You gain the following benefits while you are unarmed\r\n" + 
-						"or wielding only monk weapons and you aren’t wearing\r\n" + 
+						"or wielding only monk weapons and you aren't wearing\r\n" + 
 						"armor or w ielding a shield:\r\n" + 
-						"• You can use Dexterity instead of Strength for the\r\n" + 
+						"> You can use Dexterity instead of Strength for the\r\n" + 
 						"attack and damage rolls of your unarmed strikes and\r\n" + 
 						"monk weapons.\r\n" + 
-						"• You can roll a d4 in place of the normal damage\r\n" + 
+						"> You can roll a d4 in place of the normal damage\r\n" + 
 						"of your unarmed strike or monk weapon. This die\r\n" + 
 						"changes as you gain monk levels, as shown in the\r\n" + 
 						"Martial Arts column of the Monk table.\r\n" + 
-						"• When you use the Attack action with an unarmed\r\n" + 
+						"> When you use the Attack action with an unarmed\r\n" + 
 						"strike or a monk weapon on your turn, you can make\r\n" + 
 						"one unarmed strike as a bonus action. For example, if\r\n" + 
 						"you take the Attack action and attack with a quarterstaff,\r\n" + 
@@ -113,15 +113,15 @@ public class monk {
 				
 				if(subC.equals("hand")){
 					descr += "Open Hand Technique. \nStarting when you choose this tradition at 3rd level,\r\n" + 
-							"you can manipulate your enemy’s ki when you harness\r\n" + 
+							"you can manipulate your enemy's ki when you harness\r\n" + 
 							"your own. Whenever you hit a creature with one of the\r\n" + 
 							"attacks granted by your Flurry of Blows, you can impose\r\n" + 
 							"one of the following effects on that target:\r\n" + 
-							"• It must succeed on a Dexterity saving throw or be\r\n" + 
+							"> It must succeed on a Dexterity saving throw or be\r\n" + 
 							"knocked prone.\r\n" + 
-							"• It must make a Strength saving throw. If it fails, you\r\n" + 
+							"> It must make a Strength saving throw. If it fails, you\r\n" + 
 							"can push it up to 15 feet away from you.\r\n" + 
-							"• It can’t take reactions until the end of your next turn.\n\n";
+							"> It can't take reactions until the end of your next turn.\n\n";
 				}
 				else if(subC.equals("shadow")){
 					descr += "Shadow Arts. \nStarting when you choose this tradition at 3rd level, you\r\n" + 
@@ -129,7 +129,7 @@ public class monk {
 							"As an action, you can spend 2 ki points to cast darkness,\r\n" + 
 							"darkvision, pass without trace, or silence, without\r\n" + 
 							"providing material components. Additionally, you gain\r\n" + 
-							"the minor illusion cantrip if you don’t already know it.\n\n";
+							"the minor illusion cantrip if you don't already know it.\n\n";
 				}
 				else if(subC.equals("elements")){
 					descr += "Disciple of the Elements. \nWhen you choose this tradition at 3rd level, you learn\r\n" + 
@@ -138,7 +138,7 @@ public class monk {
 							"each time you use it.\r\n" + 
 							"You know the Elemental Attunement discipline and\r\n" + 
 							"one other elemental discipline of your choice, which are\r\n" + 
-							"detailed in the “Elemental Disciplines” section below.\r\n" + 
+							"detailed in the 'Elemental Disciplines' section below.\r\n" + 
 							"You learn one additional elemental discipline of your\r\n" + 
 							"choice at 6th, 11th, and 17th level.\r\n" + 
 							"Whenever you learn a new elemental discipline,\r\n" + 
@@ -148,7 +148,7 @@ public class monk {
 							"disciplines allow you to cast spells. See chapter 10 for\r\n" + 
 							"the general rules of spellcasting. To cast one of these\r\n" + 
 							"spells, you use its casting time and other rules, but you\r\n" + 
-							"don’t need to provide material components for it.\r\n" + 
+							"don't need to provide material components for it.\r\n" + 
 							"Once you reach 5th level in this class, you can spend\r\n" + 
 							"additional ki points to increase the level of an elemental\r\n" + 
 							"discipline spell that you cast, provided that the spell has\r\n" + 
@@ -157,7 +157,7 @@ public class monk {
 							"ki point you spend. For example, if you are a 5th-level\r\n" + 
 							"monk and use Sweeping Cinder Strike to cast burning\r\n" + 
 							"hands, you can spend 3 ki points to cast it as a 2nd-level\r\n" + 
-							"spell (the discipline’s base cost of 2 ki points plus 1).\r\n" + 
+							"spell (the discipline's base cost of 2 ki points plus 1).\r\n" + 
 							"The maximum number of ki points you can spend to\r\n" + 
 							"cast a spell in this way (including its base ki point cost\r\n" + 
 							"and any additional ki points you spend to increase its\r\n" + 
@@ -180,15 +180,15 @@ public class monk {
 								"Elemental Attunement. \nYou can use your action to\r\n" + 
 								"briefly control elemental forces nearby, causing one of\r\n" + 
 								"the following effects of your choice:\r\n" + 
-								"• Create a harmless, instantaneous sensory effect\r\n" + 
+								"> Create a harmless, instantaneous sensory effect\r\n" + 
 								"related to air, earth, fire, or water, such as a shower of\r\n" + 
 								"sparks, a puff of wind, a spray of light mist, or a gentle\r\n" + 
 								"rumbling of stone.\r\n" + 
-								"• Instantaneously light or snuff out a candle, a torch, or\r\n" + 
+								"> Instantaneously light or snuff out a candle, a torch, or\r\n" + 
 								"a small campfire.\r\n" + 
-								"• Chill or warm up to 1 pound of nonliving material for\r\n" + 
+								"> Chill or warm up to 1 pound of nonliving material for\r\n" + 
 								"up to 1 hour.\r\n" + 
-								"• Cause earth, fire, water, or mist that can fit within a\r\n" + 
+								"> Cause earth, fire, water, or mist that can fit within a\r\n" + 
 								"1-foot cube to shape itself into a crude form you designate\r\n" + 
 								"for 1 minute.\n\n" + 
 								"Eternal Mountain Defense (11th Level Required).\r\n" + 
@@ -213,7 +213,7 @@ public class monk {
 								"bludgeoning damage for each additional ki point you\r\n" + 
 								"spend, and you can push the creature up to 20 feet away\r\n" + 
 								"from you and knock it prone. On a successful save, the\r\n" + 
-								"creature takes half as much damage, and you don’t push\r\n" + 
+								"creature takes half as much damage, and you don't push\r\n" + 
 								"it or knock it prone.\n\n" + 
 								"Flames of the Phoenix (11th Level Required). \nYou " + 
 								"can spend 4 ki points to cast fireball.\n\n" + 
@@ -232,13 +232,13 @@ public class monk {
 								"larger than 30 feet on a side within 120 feet of you. You\r\n" + 
 								"can change water to ice within the area and v ice versa,\r\n" + 
 								"and you can reshape ice in the area in any manner you\r\n" + 
-								"choose. You can raise or lower the ice’s elevation, create\r\n" + 
+								"choose. You can raise or lower the ice's elevation, create\r\n" + 
 								"or fill in a trench, erect or flatten a wall, or form a pillar.\r\n" + 
-								"The extent of any such changes can’t exceed half the\r\n" + 
-								"area’s largest dimension. For example, if you affect a\r\n" + 
+								"The extent of any such changes can't exceed half the\r\n" + 
+								"area's largest dimension. For example, if you affect a\r\n" + 
 								"30-foot square, you can create a pillar up to 15 feet high,\r\n" + 
-								"raise or lower the square’s elevation by up to 15 feet, dig\r\n" + 
-								"a trench up to 15 feet deep, and so on. You can’t shape\r\n" + 
+								"raise or lower the square's elevation by up to 15 feet, dig\r\n" + 
+								"a trench up to 15 feet deep, and so on. You can't shape\r\n" + 
 								"the ice to trap or injure a creature in the area.\n\n" + 
 								"Sweeping Cinder Strike. \nYou can spend 2 ki points to\r\n" + 
 								"cast burning hands.\n\n" + 
@@ -251,7 +251,7 @@ public class monk {
 								"damage for each additional ki point you spend, and you\r\n" + 
 								"can either knock it prone or pull it up to 25 feet closer\r\n" + 
 								"to you. On a successful save, the creature takes half as\r\n" + 
-								"much damage, and you don’t pull it or knock it prone.\n\n" + 
+								"much damage, and you don't pull it or knock it prone.\n\n" + 
 								"Wave of Rolling Earth (17th Level Required). \nYou " + 
 								"can spend 6 ki points to cast wall of stone.\n\n";
 					}
@@ -260,7 +260,7 @@ public class monk {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n"
 						+ "Slow Fall. \nBeginning at 4th level, you can use your reaction when\r\n" + 
 						"you fall to reduce any falling damage you take by an\r\n" + 
@@ -270,7 +270,7 @@ public class monk {
 				descr += "Extra Attack. \nBeginning at 5th level, you can attack twice, instead of\r\n" + 
 						"once, whenever you take the Attack action on your turn.\n\n"
 						+ "Stunning Strike. \nStarting at 5th level, you can interfere with the flow of\r\n" + 
-						"ki in an opponent’s body. When you hit another creature\r\n" + 
+						"ki in an opponent's body. When you hit another creature\r\n" + 
 						"with a melee weapon attack, you can spend 1 ki point to\r\n" + 
 						"attempt a stunning strike. The target must succeed on a\r\n" + 
 						"Constitution saving throw or be stunned until the end of\r\n" + 
@@ -300,7 +300,7 @@ public class monk {
 			else if(point == 7){
 				descr += "Evasion. \nAt 7th level, your instinctive agility lets you dodge\r\n" + 
 						"out of the way of certain area effects, such as a blue\r\n" + 
-						"dragon’s lightning breath or a fireball spell. When you\r\n" + 
+						"dragon's lightning breath or a fireball spell. When you\r\n" + 
 						"are subjected to an effect that allows you to make a\r\n" + 
 						"Dexterity saving throw to take only half damage, you\r\n" + 
 						"instead take no damage if you succeed on the saving\r\n" + 
@@ -312,7 +312,7 @@ public class monk {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){ 
@@ -346,7 +346,7 @@ public class monk {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){
@@ -371,13 +371,13 @@ public class monk {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){//path
 				if(subC.equals("hand")){
 					descr += "Quivering Palm. \nAt 17th level, you gain the ability to set up lethal\r\n" + 
-							"vibrations in someone’s body. When you hit a creature\r\n" + 
+							"vibrations in someone's body. When you hit a creature\r\n" + 
 							"with an unarmed strike, you can spend 3 ki points to\r\n" + 
 							"start these imperceptible vibrations, which last for a\r\n" + 
 							"number of days equal to your monk level. The vibrations\r\n" + 
@@ -407,13 +407,13 @@ public class monk {
 						"but force damage.\r\n" + 
 						"Additionally, you can spend 8 ki points to cast the\r\n" + 
 						"astral projection spell, without needing material\r\n" + 
-						"components. When you do so, you can’t take any other\r\n" + 
+						"components. When you do so, you can't take any other\r\n" + 
 						"creatures with you.\n\n";
 			}
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){

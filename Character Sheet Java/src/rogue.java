@@ -31,7 +31,7 @@ public class rogue {
 				+ "Armor: Light armor\r\n" + 
 				"Weapons: Simple weapons, hand crossbows,\r\n" + 
 				"longswords, rapiers, shortswords\r\n" + 
-				"Tools: Thieves’ tools\r\n" + 
+				"Tools: Thieves' tools\r\n" + 
 				"Saving Throws: Dexterity. Intelligence\r\n" + 
 				"Skills: Choose four from Acrobatics, Athletics,\r\n" + 
 				"Deception. Insight, Intimidation, Investigation,\r\n" + 
@@ -43,28 +43,28 @@ public class rogue {
 			if(point == 1){
 				descr += "Expertise. \nAt 1st level, choose two o f your skill proficiencies, or\r\n" + 
 						"one o f your skill proficiencies and your proficiency with\r\n" + 
-						"thieves’ tools. Your proficiency bonus is doubled for any\r\n" + 
+						"thieves' tools. Your proficiency bonus is doubled for any\r\n" + 
 						"ability check you make that uses either o f the chosen\r\n" + 
 						"proficiencies.\n\n"
 						+ "Sneak Attack. \nBeginning at 1st level, you know how to strike subtly\r\n" + 
-						"and exploit a foe’s distraction. Once per turn, you can\r\n" + 
+						"and exploit a foe's distraction. Once per turn, you can\r\n" + 
 						"deal an extra 1d6 damage to one creature you hit with\r\n" + 
 						"an attack if you have advantage on the attack roll. The\r\n" + 
 						"attack must use a finesse or a ranged w eapon.\r\n" + 
-						"You don’t need advantage on the attack roll if another\r\n" + 
+						"You don't need advantage on the attack roll if another\r\n" + 
 						"enemy o f the target is within 5 feet o f it, that enemy\r\n" + 
-						"isn’t incapacitated, and you don’t have disadvantage on\r\n" + 
+						"isn't incapacitated, and you don't have disadvantage on\r\n" + 
 						"the attack roll.\n\n"
-						+ "Thieves' Cant. \nDuring your rogue training you learned thieves’ cant, a\r\n" + 
+						+ "Thieves' Cant. \nDuring your rogue training you learned thieves' cant, a\r\n" + 
 						"secret mix o f dialect, jargon, and code that allows you to\r\n" + 
 						"hide messages in seemingly normal conversation. Only\r\n" + 
-						"another creature that knows thieves’ cant understands\r\n" + 
+						"another creature that knows thieves' cant understands\r\n" + 
 						"such messages. It takes four times longer to convey such\r\n" + 
 						"a message than it does to speak the same idea plainly.\r\n" + 
 						"In addition, you understand a set o f secret signs and\r\n" + 
 						"symbols used to convey short, simple messages, such\r\n" + 
 						"as whether an area is dangerous or the territory o f a\r\n" + 
-						"thieves’ guild, whether loot is nearby, or whether the\r\n" + 
+						"thieves' guild, whether loot is nearby, or whether the\r\n" + 
 						"people in an area are easy marks or w ill provide a safe\r\n" + 
 						"house for thieves on the run.\n\n";
 			}
@@ -79,7 +79,7 @@ public class rogue {
 				if(subC.equals("thief")){
 					descr += "Fast Hands. \nStarting at 3rd level, you can use the bonus action\r\n" + 
 							"granted by your Cunning A ction to make a Dexterity\r\n" + 
-							"(Sleight o f Hand) check, use your thieves’ tools to\r\n" + 
+							"(Sleight o f Hand) check, use your thieves' tools to\r\n" + 
 							"disarm a trap or open a lock, or take the Use an\r\n" + 
 							"Object action.\n\n"
 							+ "Second-Story Work. \nWhen you choose this archetype at 3rd level, you gain\r\n" + 
@@ -91,10 +91,10 @@ public class rogue {
 				}
 				else if(subC.equals("assassin")){
 					descr += "Bonus Proficiencies. \nWhen you choose this archetype at 3rd level, you gain\r\n" + 
-							"proficiency with the disguise kit and the poisoner’s kit.\n\n"
+							"proficiency with the disguise kit and the poisoner's kit.\n\n"
 							+ "Assassinate. \nStarting at 3rd level, you are at your deadliest when you\r\n" + 
 							"get the drop on your enemies. You have advantage on\r\n" + 
-							"attack rolls against any creature that hasn’t taken a turn\r\n" + 
+							"attack rolls against any creature that hasn't taken a turn\r\n" + 
 							"in the combat yet. In addition, any hit you score against\r\n" + 
 							"a creature that is surprised is a critical hit.\n\n";
 				}
@@ -109,15 +109,15 @@ public class rogue {
 							+ "Mage Hand Legerdemain. \nStarting at 3rd level, when you cast mage hand, you can\r\n" + 
 							"make the spectral hand invisible, and you can perform\r\n" + 
 							"the following additional tasks with it:\r\n" + 
-							"• You can stow one object the hand is holding in a\r\n" + 
+							"> You can stow one object the hand is holding in a\r\n" + 
 							"container w orn or carried by another creature.\r\n" + 
-							"• You can retrieve an object in a container worn or\r\n" + 
+							"> You can retrieve an object in a container worn or\r\n" + 
 							"carried by another creature.\r\n" + 
-							"• You can use thieves’ tools to pick locks and disarm\r\n" + 
+							"> You can use thieves' tools to pick locks and disarm\r\n" + 
 							"traps at range.\r\n" +
 							"You can perform one o f these tasks without being\r\n" + 
 							"noticed by a creature if you succeed on a Dexterity\r\n" + 
-							"(Sleight o f Hand) check contested by the creature’s\r\n" + 
+							"(Sleight o f Hand) check contested by the creature's\r\n" + 
 							"Wisdom (Perception) check.\r\n" + 
 							"In addition, you can use the bonus action granted by\r\n" + 
 							"your Cunning Action to control the hand.\n\n";
@@ -126,22 +126,22 @@ public class rogue {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){
 				descr += "Uncanny Dodge. \nStarting at 5th level, when an attacker that you can see\r\n" + 
 						"hits you with an attack, you can use your reaction to\r\n" + 
-						"halve the attack’s damage against you.\n\n";
+						"halve the attack's damage against you.\n\n";
 			}
 			else if(point == 6){
 				descr += "Expertise (Improvement). \nYou can choose two more o f your\r\n" + 
-						"proficiencies (in skills or with thieves’ tools) to gain\r\n" + 
+						"proficiencies (in skills or with thieves' tools) to gain\r\n" + 
 						"this benefit.\n\n";
 			}
 			else if(point == 7){
 				descr += "Evasion. \nBeginning at 7th level, you can nimbly dodge out o f the\r\n" + 
-						"way o f certain area effects, such as a red dragon’s fiery\r\n" + 
+						"way o f certain area effects, such as a red dragon's fiery\r\n" + 
 						"breath or an ice storm spell. When you are subjected\r\n" + 
 						"to an effect that allows you to make a Dexterity saving\r\n" + 
 						"throw to take only half damage, you instead take no\r\n" + 
@@ -151,7 +151,7 @@ public class rogue {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){//path
@@ -164,7 +164,7 @@ public class rogue {
 					descr += "Infiltration Expertise. \nStarting at 9th level, you can unfailingly create false\r\n" + 
 							"identities for yourself. You must spend seven days and\r\n" + 
 							"25 gp to establish the history, profession, and affiliations\r\n" + 
-							"for an identity. You can’t establish an identity that\r\n" + 
+							"for an identity. You can't establish an identity that\r\n" + 
 							"belongs to someone else. For example, you might acquire\r\n" + 
 							"appropriate clothing, letters of introduction, and officiallooking\r\n" + 
 							"certification to establish yourself as a member of\r\n" + 
@@ -184,7 +184,7 @@ public class rogue {
 			else if(point == 10){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 11){
@@ -196,7 +196,7 @@ public class rogue {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){//path
@@ -209,9 +209,9 @@ public class rogue {
 				}
 				else if(subC.equals("assassin")){
 					descr += "Imposter. \nAt 13th level, you gain the ability to unerringly m imic\r\n" + 
-							"another person’s speech, writing, and behavior.\r\n" + 
+							"another person's speech, writing, and behavior.\r\n" + 
 							"You must spend at least three hours studying\r\n" + 
-							"these three components of the person’s behavior,\r\n" + 
+							"these three components of the person's behavior,\r\n" + 
 							"listening to speech, examining handwriting, and\r\n" + 
 							"observing mannerisms.\r\n" + 
 							"Your ruse is indiscernible to the casual observer. If a\r\n" + 
@@ -239,7 +239,7 @@ public class rogue {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){//path
@@ -248,7 +248,7 @@ public class rogue {
 							"laying ambushes and quickly escaping danger. You can\r\n" + 
 							"take two turns during the first round o f any combat. You\r\n" + 
 							"take your first turn at your normal initiative and your\r\n" +
-							"second turn at your initiative minus 10. You can’t use\r\n" + 
+							"second turn at your initiative minus 10. You can't use\r\n" + 
 							"this feature when you are surprised.\n\n";
 				}
 				else if(subC.equals("assassin")){
@@ -268,26 +268,26 @@ public class rogue {
 							"reaction to force the creature to make a saving throw\r\n" + 
 							"with its spellcasting ability modifier. The DC equals\r\n" + 
 							"your spell save DC. On a failed save, you negate the\r\n" + 
-							"spell’s effect against you, and you steal the knowledge\r\n" + 
+							"spell's effect against you, and you steal the knowledge\r\n" + 
 							"o f the spell if it is at least 1st level and of a level you can\r\n" + 
-							"cast (it doesn’t need to be a wizard spell). For the next\r\n" + 
+							"cast (it doesn't need to be a wizard spell). For the next\r\n" + 
 							"8 hours, you know the spell and can cast it using your\r\n" + 
-							"spell slots. The creature can’t cast that spell until the\r\n" + 
+							"spell slots. The creature can't cast that spell until the\r\n" + 
 							"8 hours have passed.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest.\n\n";
 				}
 			}
 			else if(point == 18){
 				descr += "Elusive. \nBeginning at 18th level, you are so evasive that\r\n" + 
 						"attackers rarely gain the upper hand against you. No\r\n" + 
-						"attack roll has advantage against you while you aren’t\r\n" + 
+						"attack roll has advantage against you while you aren't\r\n" + 
 						"incapacitated.\n\n";
 			}
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){
@@ -295,7 +295,7 @@ public class rogue {
 						"when you need to. If your attack m isses a target within\r\n" + 
 						"range, you can turn the miss into a hit. Alternatively, if\r\n" + 
 						"you fail an ability check, you can treat the d20 roll as a 20.\r\n" + 
-						"Once you use this feature, you can’t use it again until\r\n" + 
+						"Once you use this feature, you can't use it again until\r\n" + 
 						"you finish a short or long rest.\n\n";
 			}
 		}

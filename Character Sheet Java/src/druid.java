@@ -44,8 +44,8 @@ public class druid {
 						"can speak the language and use it to leave hidden\r\n" + 
 						"messages. You and others who know this language\r\n" + 
 						"automatically spot such a message. Others spot the\r\n" + 
-						"message’s presence with a successful DC 15 Wisdom\r\n" + 
-						"(Perception) check but can’t decipher it without magic.\n\n"
+						"message's presence with a successful DC 15 Wisdom\r\n" + 
+						"(Perception) check but can't decipher it without magic.\n\n"
 						+ "Spellcasting. \nAt 1st level, you know two cantrips o f your choice from\r\n" + 
 						"the druid spell list. You learn additional druid cantrips\r\n" + 
 						"o f your choice at higher levels, as shown in the Cantrips\r\n" + 
@@ -63,7 +63,7 @@ public class druid {
 						"Your druid level determines the beasts you can\r\n" + 
 						"transform into, as shown in the Beast Shapes table. At\r\n" + 
 						"2nd level, for example, you can transform into any beast\r\n" + 
-						"that has a challenge rating o f 1/4 or lower that doesn’t\r\n" + 
+						"that has a challenge rating o f 1/4 or lower that doesn't\r\n" + 
 						"have a flying or swimming speed. (Max Cr: 1/4; no flying or swimming speed)\n"
 						+ "You can stay in a beast shape for a number o f hours\r\n" + 
 						"equal to half your druid level (rounded down). You then\r\n" + 
@@ -80,9 +80,9 @@ public class druid {
 						"in addition to gaining those o f the creature. If\r\n" + 
 						"the creature has the same proficiency as you and the\r\n" + 
 						"bonus in its stat block is higher than yours, use the\r\n" + 
-						"creature’s bonus instead of yours. If the creature has\r\n" + 
+						"creature's bonus instead of yours. If the creature has\r\n" + 
 						"any legendary or lair actions, you can't use them.\r\n" + 
-						"• When you transform, you assume the beast’s hit\r\n" + 
+						"> When you transform, you assume the beast's hit\r\n" + 
 						"points and Hit Dice. When you revert to your normal\r\n" + 
 						"form, you return to the number o f hit points you had\r\n" + 
 						"before you transformed. However, if you revert as a\r\n" + 
@@ -90,28 +90,28 @@ public class druid {
 						"carries over to your normal form. For example, if you\r\n" + 
 						"take 10 damage in animal form and have only 1 hit\r\n" + 
 						"point left, you revert and take 9 damage. As long as\r\n" + 
-						"the excess damage doesn’t reduce your normal form\r\n" + 
-						"to 0 hit points, you aren’t knocked unconscious.\r\n" + 
-						"• You can’t cast spells, and your ability to speak or\r\n" + 
+						"the excess damage doesn't reduce your normal form\r\n" + 
+						"to 0 hit points, you aren't knocked unconscious.\r\n" + 
+						"> You can't cast spells, and your ability to speak or\r\n" + 
 						"take any action that requires hands is limited to the\r\n" + 
-						"capabilities o f your beast form. Transforming doesn’t\r\n" + 
-						"break your concentration on a spell you’ve already\r\n" + 
+						"capabilities o f your beast form. Transforming doesn't\r\n" + 
+						"break your concentration on a spell you've already\r\n" + 
 						"cast, however, or prevent you from taking actions that\r\n" + 
-						"are part o f a spell, such as call lightning, that you’ve\r\n" + 
+						"are part o f a spell, such as call lightning, that you've\r\n" + 
 						"already cast.\r\n" + 
-						"• You retain the benefit o f any features from your class,\r\n" + 
+						"> You retain the benefit o f any features from your class,\r\n" + 
 						"race, or other source and can use them if the new\r\n" + 
 						"form is physically capable o f doing so. However, you\r\n" + 
-						"can’t use any o f your special senses, such as darkvision,\r\n" + 
+						"can't use any o f your special senses, such as darkvision,\r\n" + 
 						"unless your new form also has that sense.\r\n" + 
-						"• You choose whether your equipment falls to the\r\n" + 
+						"> You choose whether your equipment falls to the\r\n" + 
 						"ground in your space, merges into your new form, or\r\n" + 
 						"is w orn by it. Worn equipment functions as normal,\r\n" + 
 						"but the DM decides whether it is practical for the new\r\n" + 
-						"form to wear a piece o f equipment, based on the creature’s\r\n" + 
-						"shape and size. Your equipment doesn’t change\r\n" + 
+						"form to wear a piece o f equipment, based on the creature's\r\n" + 
+						"shape and size. Your equipment doesn't change\r\n" + 
 						"size or shape to match the new form, and any equipment that\r\n" + 
-						"the new form can’t w ear must either fall to the\r\n" + 
+						"the new form can't w ear must either fall to the\r\n" + 
 						"ground or merge with it Equipment that merges with the form has no\r\n" + 
 						"effect until you leave the form.\n\n"
 						+ "Druid Circle. \nAt 2nd level, you choose to\r\n" + 
@@ -131,7 +131,7 @@ public class druid {
 							"spell slots to recover. The spell slots can have a\r\n" + 
 							"combined level that is equal to or less than half your\r\n" + 
 							"druid level (rounded up), and none of the slots can be\r\n" + 
-							"6th level or higher. You can’t use this feature again until\r\n" + 
+							"6th level or higher. You can't use this feature again until\r\n" + 
 							"you finish a long rest\r\n" + 
 							"For example, when you are a 4th-level druid, you can\r\n" + 
 							"recover up to two levels w orth of spell slots. You can\r\n" + 
@@ -156,9 +156,9 @@ public class druid {
 			else if(point == 3){
 				if(!(subC.equals("moon"))) {
 					descr += "Circle Spells. \nOnce you gain access to a circle spell, you always have\r\n" + 
-							"it prepared, and it doesn’t count against the number of\r\n" + 
+							"it prepared, and it doesn't count against the number of\r\n" + 
 							"spells you can prepare each day. If you gain access to a\r\n" + 
-							"spell that doesn’t appear on the druid spell list, the spell\r\n" + 
+							"spell that doesn't appear on the druid spell list, the spell\r\n" + 
 							"is nonetheless a druid spell for you.\n\n";
 				}
 				
@@ -174,7 +174,7 @@ public class druid {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){
@@ -223,7 +223,7 @@ public class druid {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){
@@ -240,7 +240,7 @@ public class druid {
 			else if(point == 10){
 				
 				if(!(subC.equals("moon"))) {
-					descr +="Nature's Ward. \nWhen you reach 10th level, you can’t be charmed or\r\n" + 
+					descr +="Nature's Ward. \nWhen you reach 10th level, you can't be charmed or\r\n" + 
 							"frightened by elementals or fey, and you are immune to\r\n" + 
 							"poison and disease.\n\n";
 				}
@@ -254,7 +254,7 @@ public class druid {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){}
@@ -282,7 +282,7 @@ public class druid {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){}
@@ -293,20 +293,20 @@ public class druid {
 					+ "Beast Spells. \nBeginning at 18th level, you can cast many of your druid\r\n" + 
 					"spells in any shape you assume using Wild Shape. You\r\n" + 
 					"can perform the somatic and verbal components of a\r\n" + 
-					"druid spell while in a beast shape, but you aren’t able to\r\n" + 
+					"druid spell while in a beast shape, but you aren't able to\r\n" + 
 					"provide material components.\n\n";
 			}
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){
 				descr += "Archdruid. \nAt 20th level, you can use your W ild Shape an unlimited\r\n" + 
 						"number of times. Additionally, you can ignore the verbal and somatic\r\n" + 
 						"components of your druid spells, as well as any material\r\n" + 
-						"components that lack a cost and aren’t consumed by a\r\n" + 
+						"components that lack a cost and aren't consumed by a\r\n" + 
 						"spell. You gain this benefit in both your normal shape\r\n" + 
 						"and your beast shape from Wild Shape.\n\n";
 			}

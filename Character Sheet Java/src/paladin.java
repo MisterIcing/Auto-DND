@@ -77,7 +77,7 @@ public class paladin {
 				descr += "Divine Smite. \nStarting at 2nd level, when you hit a creature with a\r\n" + 
 						"melee w eapon attack, you can expend one paladin spell\r\n" + 
 						"slot to deal radiant damage to the target, in addition to\r\n" + 
-						"the w eapon’s damage. The extra damage is 2d8 for a\r\n" + 
+						"the w eapon's damage. The extra damage is 2d8 for a\r\n" + 
 						"1st-level spell slot, plus 1d8 for each spell level higher\r\n" + 
 						"than 1st, to a maximum of 5d8. The damage increases\r\n" + 
 						"by 1d8 if the target is an undead or a fiend.\n\n";
@@ -113,7 +113,7 @@ public class paladin {
 						"a cleric does.\n"
 						+ "The Paladin table shows how many spell slots you have\r\n" + 
 						"to cast your spells. To cast one of your paladin spells of\r\n" + 
-						"1st level or higher, you must expend a slot of the spell’s\r\n" + 
+						"1st level or higher, you must expend a slot of the spell's\r\n" + 
 						"level or higher. You regain all expended spell slots when\r\n" + 
 						"you finish a long rest.\r\n" + 
 						"You prepare the list of paladin spells that are available\r\n" + 
@@ -141,9 +141,9 @@ public class paladin {
 						+ "Each oath has a list of associated spells. You gain\r\n" + 
 						"access to these spells at the levels specified in the oath\r\n" + 
 						"description. Once you gain access to an oath spell, you\r\n" + 
-						"always have it prepared. Oath spells don’t count against\r\n" + 
+						"always have it prepared. Oath spells don't count against\r\n" + 
 						"the number of spells you can prepare each day.\r\n" + 
-						"If you gain an oath spell that doesn’t appear on the\r\n" + 
+						"If you gain an oath spell that doesn't appear on the\r\n" + 
 						"paladin spell list, the spell is nonetheless a paladin\r\n" + 
 						"spell for you.\n"
 						+ "Your oath allows you to channel divine energy to fuel\r\n" + 
@@ -157,7 +157,7 @@ public class paladin {
 						"equals your paladin spell save DC.\n\n";
 				
 				if(subC.equals("devotion")){
-					descr += "Tenents of Devotion. Honesty. Don’t lie or cheat. Let your word be\r\n" + 
+					descr += "Tenents of Devotion. Honesty. Don't lie or cheat. Let your word be\r\n" + 
 							"your promise.\r\n" + 
 							"Courage. Never fear to act, though caution is w ise.\r\n" + 
 							"Compassion. Aid others, protect the weak, and\r\n" + 
@@ -190,11 +190,11 @@ public class paladin {
 							"fails its saving throw, it is turned for 1 minute or until\r\n" + 
 							"it takes damage.\r\n" + 
 							"A turned creature must spend its turns trying to move\r\n" + 
-							"as far away from you as it can, and it can’t willingly\r\n" + 
-							"move to a space within 30 feet of you. It also can’t take\n" +
+							"as far away from you as it can, and it can't willingly\r\n" + 
+							"move to a space within 30 feet of you. It also can't take\n" +
 							"reactions. For its action, it can use only the Dash action\r\n" + 
 							"or try to escape from an effect that prevents it from\r\n" + 
-							"moving. If there’s nowhere to move, the creature can use\r\n" + 
+							"moving. If there's nowhere to move, the creature can use\r\n" + 
 							"the Dodge action.\n\n";
 					
 					descr += "Spells: Protection from evil and good and Sanctuary.\n\n";
@@ -209,12 +209,12 @@ public class paladin {
 							"against the forces that would render it barren.\r\n" + 
 							"Preserve Your Own Light. Delight in song and\r\n" + 
 							"laughter, in beauty and art. If you allow the light to die in\r\n" + 
-							"your own heart, you can’t preserve it in the world.\r\n" + 
+							"your own heart, you can't preserve it in the world.\r\n" + 
 							"Be the Light. Be a glorious beacon for all who live in\r\n" + 
 							"despair. Let the light of your joy and courage shine forth\r\n" + 
 							"in all your deeds.\n\n"
 							+ "Channel Divinity. \n"
-							+ "Nature’s Wrath. \nYou can use your Channel Divinity\r\n" + 
+							+ "Nature's Wrath. \nYou can use your Channel Divinity\r\n" + 
 							"to invoke primeval forces to ensnare a foe. As an action,\r\n" + 
 							"you can cause spectral vines to spring up and reach\r\n" + 
 							"for a creature within 10 feet of you that you can see.\r\n" + 
@@ -231,13 +231,13 @@ public class paladin {
 							"failed save, the creature is turned for 1 minute or until it\r\n" + 
 							"takes damage.\r\n" + 
 							"A turned creature must spend its turns trying to move\r\n" + 
-							"as far away from you as it can, and it can’t willingly\r\n" + 
-							"move to a space within 30 feet of you. It also can’t take\r\n" + 
+							"as far away from you as it can, and it can't willingly\r\n" + 
+							"move to a space within 30 feet of you. It also can't take\r\n" + 
 							"reactions. For its action, it can use only the Dash action\r\n" + 
 							"or try to escape from an effect that prevents it from\r\n" + 
-							"moving. If there’s nowhere to move, the creature can use\r\n" + 
+							"moving. If there's nowhere to move, the creature can use\r\n" + 
 							"the Dodge action.\r\n" + 
-							"If the creature’s true form is concealed by an illusion,\r\n" + 
+							"If the creature's true form is concealed by an illusion,\r\n" + 
 							"shapeshifting, or other effect, that form is revealed while\r\n" + 
 							"it is turned.\n\n";
 					
@@ -249,7 +249,7 @@ public class paladin {
 							"greater evil.\r\n" + 
 							"No Mercy for the Wicked. Ordinary foes might win\r\n" + 
 							"my mercy, but my sworn enemies do not.\r\n" + 
-							"By Any Means Necessary. My qualms can’t get in the\r\n" + 
+							"By Any Means Necessary. My qualms can't get in the\r\n" + 
 							"way of exterminating my foes.\r\n" + 
 							"Restitution. \nIf my foes w reak ruin on the world, it is\r\n" + 
 							"because I failed to stop them. I must help those harmed\r\n" + 
@@ -264,9 +264,9 @@ public class paladin {
 							"this saving throw.\r\n" + 
 							"On a failed save, the creature is frightened for 1\r\n" + 
 							"minute or until it takes any damage. While frightened,\r\n" + 
-							"the creature’s speed is 0, and it can’t benefit from any\r\n" + 
+							"the creature's speed is 0, and it can't benefit from any\r\n" + 
 							"bonus to its speed.\r\n" + 
-							"On a successful save, the creature’s speed is halved\r\n" + 
+							"On a successful save, the creature's speed is halved\r\n" + 
 							"for 1 minute or until the creature takes any damage.\r\n" + 
 							"Vow of Enmity. As a bonus action, you can utter a vow\r\n" + 
 							"of enmity against a creature you can see within 10 feet\r\n" + 
@@ -279,7 +279,7 @@ public class paladin {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){//Spells
@@ -300,7 +300,7 @@ public class paladin {
 			else if(point == 7){//path
 				if(subC.equals("devotion")){
 					descr += "Aura of Devotion. \nStarting at 7th level, you and friendly creatures within\r\n" + 
-							"10 feet of you can’t be charmed while you are conscious.\n\n";
+							"10 feet of you can't be charmed while you are conscious.\n\n";
 				}
 				else if(subC.equals("ancients")){
 					descr += "Aura of Warding. \nBeginning at 7th level, ancient magic lies so heavily\r\n" + 
@@ -310,17 +310,17 @@ public class paladin {
 				}
 				else if(subC.equals("vengeance")){
 					descr += "Relentless Avenger. \nBy 7th level, your supernatural focus helps you close\r\n" + 
-							"off a foe’s retreat. When you hit a creature with an\r\n" + 
+							"off a foe's retreat. When you hit a creature with an\r\n" + 
 							"opportunity attack, you can move up to half your\r\n" + 
 							"speed immediately after the attack and as part of\r\n" + 
-							"the same reaction. This movement doesn’t provoke\r\n" + 
+							"the same reaction. This movement doesn't provoke\r\n" + 
 							"opportunity attacks.\n\n";
 				}
 			}
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){//Spells
@@ -330,7 +330,7 @@ public class paladin {
 			}
 			else if(point == 10){
 				descr += "Aura of Courage. \nStarting at 10th level, you and friendly creatures\r\n" + 
-						"within 10 feet of you can’t be frightened while you\r\n" + 
+						"within 10 feet of you can't be frightened while you\r\n" + 
 						"are conscious.\n\n";
 			}
 			else if(point == 11){
@@ -345,7 +345,7 @@ public class paladin {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){//Spells
@@ -370,9 +370,9 @@ public class paladin {
 					descr += "Undying Sentinel. \nStarting at 15th level, when you are reduced to 0 hit\r\n" + 
 							"points and are not killed outright, you can choose to\r\n" + 
 							"drop to 1 hit point instead. Once you use this ability, you\r\n" + 
-							"can’t use it again until you finish a long rest.\r\n" + 
+							"can't use it again until you finish a long rest.\r\n" + 
 							"Additionally, you suffer none of the drawbacks of old\r\n" + 
-							"age, and you can’t be aged magically.\n\n";
+							"age, and you can't be aged magically.\n\n";
 				}
 				else if(subC.equals("vengeance")){
 					descr += "Soul of Vengeance. \nStarting at 15th level, the authority with which you\r\n" + 
@@ -386,7 +386,7 @@ public class paladin {
 			else if(point == 16){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17){//Spells
@@ -400,7 +400,7 @@ public class paladin {
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){//path
@@ -412,7 +412,7 @@ public class paladin {
 							"bright light, the creature takes 10 radiant damage.\r\n" + 
 							"In addition, for the duration, you have advantage on\r\n" + 
 							"saving throws against spells cast by fiends or undead.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest.\n\n";
 				}
 				else if(subC.equals("ancients")){
@@ -423,15 +423,15 @@ public class paladin {
 							"or you might sprout antlers or a lion-like mane.\r\n" + 
 							"Using your action, you undergo a transformation.\r\n" + 
 							"For 1 minute, you gain the following benefits:\r\n" + 
-							"• At the start of each of your turns, you regain 10 hit\r\n" + 
+							"> At the start of each of your turns, you regain 10 hit\r\n" + 
 							"points.\r\n" + 
-							"• Whenever you cast a paladin spell that has a casting\r\n" + 
+							"> Whenever you cast a paladin spell that has a casting\r\n" + 
 							"time of 1 action, you can cast it using a bonus action\r\n" + 
 							"instead.\r\n" + 
-							"• Enemy creatures within 10 feet of you have disadvantage\r\n" + 
+							"> Enemy creatures within 10 feet of you have disadvantage\r\n" + 
 							"on saving throws against your paladin spells and\r\n" + 
 							"Channel Divinity options.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest.\n\n";
 				}
 				else if(subC.equals("vengeance")){
@@ -439,16 +439,16 @@ public class paladin {
 							"angelic avenger. Using your action, you undergo a\r\n" + 
 							"transformation. For 1 hour, you gain the following\r\n" + 
 							"benefits:\r\n" + 
-							"• Wings sprout from your back and grant you a flying\r\n" + 
+							"> Wings sprout from your back and grant you a flying\r\n" + 
 							"speed of 60 feet.\r\n" + 
-							"• You emanate an aura of menace in a 30-foot radius.\r\n" + 
+							"> You emanate an aura of menace in a 30-foot radius.\r\n" + 
 							"The first time any enemy creature enters the aura or\r\n" + 
 							"starts its turn there during a battle, the creature must\r\n" + 
 							"succeed on a W isdom saving throw or become frightened\r\n" + 
 							"of you for 1 minute or until it takes any damage.\r\n" + 
 							"Attack rolls against the frightened creature have\r\n" + 
 							"advantage.\r\n" + 
-							"Once you use this feature, you can’t use it again until\r\n" + 
+							"Once you use this feature, you can't use it again until\r\n" + 
 							"you finish a long rest.\n\n";
 				}
 			}

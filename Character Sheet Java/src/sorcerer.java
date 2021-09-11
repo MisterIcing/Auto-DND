@@ -64,7 +64,7 @@ public class sorcerer {
 							"your hit point maximum increases by 1 and increases by\r\n" + 
 							"1 again whenever you gain a level in this class.\r\n" + 
 							"Additionally, parts of your skin are covered by a thin\r\n" + 
-							"sheen of dragon-like scales. When you aren’t wearing\r\n" + 
+							"sheen of dragon-like scales. When you aren't wearing\r\n" + 
 							"armor, your AC equals 13 + your Dexterity modifier.\n\n";
 				}
 				else if(subC.equals("wild")){
@@ -116,7 +116,7 @@ public class sorcerer {
 						+ "Converting a Spell Slot to Sorcery Points. \nAs a\r\n" + 
 						"bonus action on your turn, you can expend one spell\r\n" + 
 						"slot and gain a number of sorcery points equal to the\r\n" + 
-						"slot’s level.\n\n"; 
+						"slot's level.\n\n"; 
 				
 			}
 			else if(point == 3){
@@ -129,7 +129,7 @@ public class sorcerer {
 						+ "Careful Spell\r\n" + 
 						"When you cast a spell that forces other creatures to make\r\n" + 
 						"a saving throw, you can protect some of those creatures\r\n" + 
-						"from the spell’s full force. To do so, you spend 1 sorcery\r\n" + 
+						"from the spell's full force. To do so, you spend 1 sorcery\r\n" + 
 						"point and choose a number of those creatures up to your\r\n" + 
 						"Charisma modifier (minimum of one creature). A chosen\r\n" + 
 						"creature automatically succeeds on its saving throw\r\n" + 
@@ -167,8 +167,8 @@ public class sorcerer {
 						"cast it without any somatic or verbal components.\n\n" 
 						+ "Twinned Spell\r\n" + 
 						"When you cast a spell that targets only one creature and\r\n" + 
-						"doesn’t have a range of self, you can spend a number of\r\n" + 
-						"sorcery points equal to the spell’s level to target a second\r\n" + 
+						"doesn't have a range of self, you can spend a number of\r\n" + 
+						"sorcery points equal to the spell's level to target a second\r\n" + 
 						"creature in range with the same spell (1 sorcery point if\r\n" + 
 						"the spell is a cantrip).\n"
 						+ "//End of Metamagic options\n\n";
@@ -176,7 +176,7 @@ public class sorcerer {
 			else if(point == 4){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5){}
@@ -194,7 +194,7 @@ public class sorcerer {
 							"see makes an attack roll, an ability check, or a saving\r\n" + 
 							"throw, you can use your reaction and spend 2 sorcery\r\n" + 
 							"points to roll 1d4 and apply the number rolled as a\r\n" + 
-							"bonus or penalty (your choice) to the creature’s roll.\n" +
+							"bonus or penalty (your choice) to the creature's roll.\n" +
 							"You can do so after the creature rolls but before any effects\r\n" + 
 							"of the roll occur.\n\n";
 				}
@@ -203,7 +203,7 @@ public class sorcerer {
 			else if(point == 8){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9){}
@@ -214,7 +214,7 @@ public class sorcerer {
 			else if(point == 12){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13){}
@@ -225,7 +225,7 @@ public class sorcerer {
 							"equal to your current speed. You can create these w ings\r\n" + 
 							"as a bonus action on your turn. They last until you\r\n" + 
 							"dismiss them as a bonus action on your turn.\r\n" + 
-							"You can’t manifest your w ings while wearing armor\r\n" + 
+							"You can't manifest your w ings while wearing armor\r\n" + 
 							"unless the armor is made to accommodate them, and\r\n" + 
 							"clothing not made to accommodate your wings might\r\n" + 
 							"be destroyed when you manifest them.\n\n";
@@ -271,7 +271,7 @@ public class sorcerer {
 			else if(point == 19){
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20){
@@ -307,11 +307,11 @@ public class sorcerer {
 					+ "43-44: For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns.\n"
 					+ "45-46: You cast levitate on yourself.\n"
 					+ "47-48: A unicorn controlled by the DM appears in a space within 5 feet of you, then disappears 1 minute later.\n"
-					+ "49-50: You can’t speak for the next minute. Whenever you try, pink bubbles float out of your mouth.\n"
+					+ "49-50: You can't speak for the next minute. Whenever you try, pink bubbles float out of your mouth.\n"
 					+ "51-52: A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to magic missile.\n"
 					+ "53-54: You are immune to being intoxicated by alcohol for the next 5d6 days.\n"
 					+ "55-56: Your hair falls out but grows back within 24 hours.\n"
-					+ "57-58: For the next minute, any flammable object you touch that isn’t being worn or carried by another creature bursts into flame.\n"
+					+ "57-58: For the next minute, any flammable object you touch that isn't being worn or carried by another creature bursts into flame.\n"
 					+ "59-60: You regain your lowest-level expended spell slot.\n"
 					+ "61-62: For the next minute, you must shout when you speak\n"
 					+ "63-64: You cast fog cloud centered on yourself.\n"
@@ -321,13 +321,13 @@ public class sorcerer {
 					+ "71-72: You gain resistance to all damage for the next minute.\n"
 					+ "73-74: A random creature within 60 feet of you becomes poisoned for 1d4 hours.\n"
 					+ "75-76: You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is blinded until the end of its next turn.\n"
-					+ "77=78: You cast polymorph on yourself. If you fail the saving throw, you turn into a sheep for the spell’s duration.\n"
+					+ "77=78: You cast polymorph on yourself. If you fail the saving throw, you turn into a sheep for the spell's duration.\n"
 					+ "79-80: Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute.\n"
 					+ "81-82: You can take one additional action immediately.\n"
 					+ "83-84: Each creature within 30 feet of you takes 1d10 necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt.\n"
 					+ "85-86: You cast mirror image.\n"
 					+ "87-88: You cast fly on a random creature within 60 feet of you.\n"
-					+ "89-90: You become invisible for the next minute. During that time, other creatures can’t hear you. The invisibility ends if you attack or cast a spell.\n"
+					+ "89-90: You become invisible for the next minute. During that time, other creatures can't hear you. The invisibility ends if you attack or cast a spell.\n"
 					+ "91-92: If you die within the next minute, you immediately come back to life as if by the reincarnate spell.\n"
 					+ "93-94: Your size increases by one size category for the next minute.\n"
 					+ "95-96: You and all creatures within 30 feet of you gain vulnerability to piercing damage for the next minute.\n"

@@ -67,7 +67,7 @@ public class bard {
 			{
 				descr +="Jack of All Trades. \nStarting at 2nd level, you can add half your proficiency\r\n" + 
 						"bonus, rounded down, to any ability check you make that\r\n" + 
-						"doesn’t already include your proficiency bonus.\n\n"
+						"doesn't already include your proficiency bonus.\n\n"
 						+ "Song of Rest. Beginning at 2nd level, you can use soothing music or\r\n" + 
 						"oration to help revitalize your wounded allies during\r\n" + 
 						"a short rest. If you or any friendly creatures w ho can\r\n" + 
@@ -92,12 +92,12 @@ public class bard {
 							"check, or a damage roll, you can use your reaction to\r\n" + 
 							"expend one of your uses of Bardic Inspiration, rolling\r\n" + 
 							"a Bardic Inspiration die and subtracting the number\r\n" + 
-							"rolled from the creature’s roll. You can choose to use\r\n" + 
+							"rolled from the creature's roll. You can choose to use\r\n" + 
 							"this feature after the creature makes its roll, but before\r\n" + 
 							"the DM determines whether the attack roll or ability\n" +
 							"check succeeds or fails, or before the creature deals its\r\n" + 
-							"damage. The creature is immune if it can’t hear you or if\r\n" + 
-							"it’s immune to being charmed.\n\n";
+							"damage. The creature is immune if it can't hear you or if\r\n" + 
+							"it's immune to being charmed.\n\n";
 				}
 				else if(subC.equals("valor"))
 				{
@@ -118,7 +118,7 @@ public class bard {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 5)
@@ -145,7 +145,7 @@ public class bard {
 					descr +="Additional Magical Secrets. \nAt 6th level, you learn two spells of your choice from any\r\n" + 
 							"class. A spell you choose must be of a level you can cast,\r\n" + 
 							"as shown on the Bard table, or a cantrip. The chosen\r\n" + 
-							"spells count as bard spells for you but don’t count\r\n" + 
+							"spells count as bard spells for you but don't count\r\n" + 
 							"against the number of bard spells you know.\n\n";
 				}
 				else if(subC.equals("valor"))
@@ -158,7 +158,7 @@ public class bard {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 9)
@@ -183,7 +183,7 @@ public class bard {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 13)
@@ -219,7 +219,7 @@ public class bard {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 17)
@@ -234,7 +234,7 @@ public class bard {
 			{
 				descr +="Ability Score Improvement. \nYou can increase one ability score of your\r\n" + 
 						"choice by 2, or you can increase two ability scores of\r\n" + 
-						"your choice by 1. As normal, you can’t increase an ability\r\n" + 
+						"your choice by 1. As normal, you can't increase an ability\r\n" + 
 						"score above 20 using this feature.\n\n";
 			}
 			else if(point == 20)
