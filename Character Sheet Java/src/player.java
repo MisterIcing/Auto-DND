@@ -8,6 +8,8 @@ public class player {
 	Scanner race = new Scanner(System.in);
 	Scanner info = new Scanner(System.in);
 	Scanner gloop = new Scanner(System.in);
+	Scanner armor = new Scanner(System.in);
+	String mat = "";
 	String nRace = "";
 	String descr = "";
 	String subR = "";
@@ -18,6 +20,8 @@ public class player {
 	String subC = "";
 	String spc = "";
 	String prof = "";
+	String gear = "";
+	int ac = 0;
 	int speed = 0;
 	int nLevel = 1;
 	int health = 0;
@@ -32,7 +36,6 @@ public class player {
 	int aNum = 0;
 	int subNum = 0;
 	
-	//TODO add weapon & armor choices as new method in each class
 	public player(ArrayList<Integer> stats, String clss, int level, boolean abb, boolean hug)
 	{
 		nStats = stats;
@@ -98,15 +101,15 @@ public class player {
 						"have superior vision in dark and dim conditions. You\r\n" + 
 						"can see in dim light within 60 feet of you as if it w ere\r\n" + 
 						"bright light, and in darkness as if it were dim light. You\r\n" + 
-						"can’t discern color in darkness, only shades of gray.\r\n\n" + 
+						"canï¿½t discern color in darkness, only shades of gray.\r\n\n" + 
 						"Dwarven Resilience. You have advantage on saving\r\n" + 
 						"throws against poison, and you have resistance against\r\n" + 
 						"poison damage (explained in chapter 9).\r\n\n" + 
 						"Dwarven Combat Training. You have proficiency\r\n" + 
 						"with the battleaxe, handaxe, throwing hammer,\r\n" + 
 						"and warhammer.\n\n" + "Tool Proficiency. \nYou gain proficiency with the\r\n" + 
-						"artisan’s tools of your choice: smith’s tools, brewer’s\r\n" + 
-						"supplies, or mason’s tools.\r\n\n" + 
+						"artisanï¿½s tools of your choice: smithï¿½s tools, brewerï¿½s\r\n" + 
+						"supplies, or masonï¿½s tools.\r\n\n" + 
 						"Stonecunning. \nWhenever you make an Intelligence\r\n" + 
 						"(History) check related to the origin of stonework, you\r\n" + 
 						"are considered proficient in the History skill and add\r\n" + 
@@ -169,15 +172,15 @@ public class player {
 					"sky, you have superior vision in dark and dim conditions.\r\n" + 
 					"You can see in dim light within 60 feet of you as if it\r\n" + 
 					"were bright light, and in darkness as if it were dim light.\r\n" + 
-					"You can’t discern color in darkness, only shades of gray.\r\n" + 
+					"You canï¿½t discern color in darkness, only shades of gray.\r\n" + 
 					"Keen Senses. You have proficiency in the\r\n" + 
 					"Perception skill.\r\n\n" + 
 					"Fey Ancestry. \nYou have advantage on saving throws\r\n" + 
-					"against being charmed, and magic can’t put you to sleep.\n\n" +
-					"Trance. Elves don’t need to sleep. Instead, they\r\n" + 
+					"against being charmed, and magic canï¿½t put you to sleep.\n\n" +
+					"Trance. Elves donï¿½t need to sleep. Instead, they\r\n" + 
 					"meditate deeply, remaining semiconscious, for 4\r\n" + 
 					"hours a day. (The Common word for such meditation\r\n" + 
-					"is “trance.”) While meditating, you can dream after a\r\n" + 
+					"is ï¿½trance.ï¿½) While meditating, you can dream after a\r\n" + 
 					"fashion; such dreams are actually mental exercises that\r\n" + 
 					"have become reflexive through years of practice. After\r\n" + 
 					"resting in this way, you gain the same benefit that a\r\n" + 
@@ -282,9 +285,9 @@ public class player {
 					"Halfling Nimbleness. \nYou can move through the\r\n" + 
 					"space of any creature that is of a size larger than yours.\n\n" + 
 					"Languages. \nYou can speak, read, and write Common\r\n" + 
-					"and Halfling. The Halfling language isn’t secret, but\r\n" + 
+					"and Halfling. The Halfling language isnï¿½t secret, but\r\n" + 
 					"halflings are loath to share it with others. They write\r\n" + 
-					"very little, so they don’t have a rich body of literature.\r\n" + 
+					"very little, so they donï¿½t have a rich body of literature.\r\n" + 
 					"Their oral tradition, however, is very strong. Almost all\r\n" + 
 					"halflings speak Common to converse with the people\r\n" + 
 					"in whose lands they dwell or through which they\r\n" + 
@@ -410,7 +413,7 @@ public class player {
 					"as much damage on a successful one. The damage\r\n" + 
 					"increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6\r\n" + 
 					"at 16th level.\r\n" + 
-					"After you use your breath weapon, you can’t use it\r\n" + 
+					"After you use your breath weapon, you canï¿½t use it\r\n" + 
 					"again until you complete a short or long rest.\r\n\n" + 
 					"Damage Resistance. \nYou have resistance to the\r\n" + 
 					"damage type associated with your draconic ancestry.\r\n\n" + 
@@ -480,13 +483,13 @@ public class player {
 							+ "Tinker \n\n";
 				}
 				else {
-				descr +="Artificer’s Lore. \nWhenever you make an Intelligence\r\n" + 
+				descr +="Artificerï¿½s Lore. \nWhenever you make an Intelligence\r\n" + 
 						"(History) check related to magic items, alchemical\r\n" + 
 						"objects, or technological devices, you can add twice your\r\n" + 
 						"proficiency bonus, instead of any proficiency bonus you\r\n" + 
 						"normally apply.\r\n\n" + 
-						"Tinker. \nYou have proficiency with artisan’s tools\r\n" + 
-						"(tinker’s tools). Using those tools, you can spend 1\r\n" + 
+						"Tinker. \nYou have proficiency with artisanï¿½s tools\r\n" + 
+						"(tinkerï¿½s tools). Using those tools, you can spend 1\r\n" + 
 						"hour and 10 gp worth of materials to construct a Tiny\r\n" + 
 						"clockwork device (AC 5, 1 hp). The device ceases\r\n" + 
 						"to function after 24 hours (unless you spend 1 hour\r\n" + 
@@ -509,7 +512,7 @@ public class player {
 						"Music Box. \nWhen opened, this music box\r\n" + 
 						"plays a single song at a moderate volume.\r\n" + 
 						"The box stops playing when it\r\n" + 
-						"reaches the song’s end or\r\n" + 
+						"reaches the songï¿½s end or\r\n" + 
 						"when it is closed.\n\n";
 				}
 			}
@@ -534,10 +537,10 @@ public class player {
 			descr +="Darkvision. \nThanks to your elf blood, you have\r\n" + 
 					"superior vision in dark and dim conditions. You can\r\n" + 
 					"see in dim light within 60 feet of you as if it were bright\r\n" + 
-					"light, and in darkness as if it were dim light. You can’t\r\n" + 
+					"light, and in darkness as if it were dim light. You canï¿½t\r\n" + 
 					"discern color in darkness, only shades of gray.\r\n\n" + 
 					"Fey Ancestry. You have advantage on saving throws\r\n" + 
-					"against being charmed, and magic can’t put you to sleep.\r\n\n" + 
+					"against being charmed, and magic canï¿½t put you to sleep.\r\n\n" + 
 					"Skill Versatility. \nYou gain proficiency in two skills\r\n" + 
 					"o f your choice.\r\n" + 
 					"Languages. \nYou can speak, read, and write Common,\r\n" + 
@@ -568,10 +571,10 @@ public class player {
 					"Intimidation skill.\r\n\n" + 
 					"Relentless Endurance. \nWhen you are reduced to\r\n" + 
 					"0 hit points but not  killed outright, you can drop to 1 hit\r\n" + 
-					"point instead. You can’t use this feature again until you\r\n" + 
+					"point instead. You canï¿½t use this feature again until you\r\n" + 
 					"finish a long rest.\r\n\n" + 
 					"Savage Attacks. \nWhen you score a critical hit with\r\n" + 
-					"a melee weapon attack, you can roll one of the weapon’s\r\n" + 
+					"a melee weapon attack, you can roll one of the weaponï¿½s\r\n" + 
 					"damage dice one additional time and add it to the extra\r\n" + 
 					"damage of the critical hit.\r\n\n" + 
 					"Languages. \nYou can speak, read, and\r\n" + 
@@ -599,7 +602,7 @@ public class player {
 					"have superior vision in dark and dim conditions. You\r\n" + 
 					"can see in dim light within 60 feet of you as if it w ere\r\n" + 
 					"bright light, and in darkness as if it were dim light. You\r\n" + 
-					"can’t discern color in darkness, only shades of gray.\r\n\n" + 
+					"canï¿½t discern color in darkness, only shades of gray.\r\n\n" + 
 					"Hellish Resistance. \nYou have resistance " + 
 					"to fire damage.\r\n\n" + 
 					"Infernal Legacy. \nYou know the thaumaturgy cantrip.\r\n" + 
@@ -624,99 +627,957 @@ public class player {
 		//TODO someone needs to check the math
 		if(nClss.equals("barbarian"))
 		{
-			health = 12 + nStats.get(2);
+			health = 12 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*12) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*12) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Constitution";
 			hitDie = "d12";
+			ac = 10 + Integer.parseInt(init); //assumed none,  base equ for future
+			System.out.println("Would you like a greataxe(a) or a martial weapon(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a")){
+				gear += "Greataxe(1d12 Slashing), ";
+			}
+			//Bookmark martial melee weapons list and choice; maybe make it an arraylist and grab, but not much less writting, maybe a function
+			else if(mat.equals("b")){ 
+				System.out.println("Which martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+				"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+				"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, Finesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+				"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)");
+				mat =armor.nextLine().toLowerCase().trim();
+				if(mat.equals("battleaxe"))
+					gear += "Battleaxe(1d8 Slashing/1d10), ";
+				else if(mat.equals("flail"))
+					gear += "Flail(1d8 Bludgeoning), ";
+				else if(mat.equals("glaive"))
+					gear += "Glaive(1d10 Slashing), ";
+				else if(mat.equals("greataxe"))
+					gear += "Greataxe(1d12 Slashing), ";
+				else if(mat.equals("greatsword"))
+					gear += "Greatsword(2d6 Slashing), ";
+				else if(mat.equals("halberd"))
+					gear += "Halberd(1d10 Slashing), ";
+				else if(mat.equals("lance"))
+					gear += "Lance(1d12 Piercing), ";
+				else if(mat.equals("longsword"))
+					gear += "Longsword(1d8 Slashing), ";
+				else if(mat.equals("maul"))
+					gear += "Maul(2d6 Bludgeoning), ";
+				else if(mat.equals("morningstar"))
+					gear += "Morningstar(1d8 Piercing), ";
+				else if(mat.equals("pike"))
+					gear += "Pike(1d10 Piercing), ";
+				else if(mat.equals("rapier"))
+					gear += "Rapier(1d8 Piercing, Finesse), ";
+				else if(mat.equals("scimitar"))
+					gear += "Scimitar(1d6 Piercing, Finesse), ";
+				else if(mat.equals("shortsword"))
+					gear += "Shortsword(1d6 Piercing, Finesse), ";
+				else if(mat.equals("trident"))
+					gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("war pick"))
+					gear += "War pick(1d8 Piercing), ";
+				else if(mat.equals("warhammer"))
+					gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+				else if(mat.equals("whip"))
+					gear += "Whip(1d4 Slashing, Finesse), ";	
+			}
+			System.out.println("Would you like 2 handaxes(a) or any simple weapon(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "2 Handaxes(1d6 Slashing[Thrown:20/60])";
+			//Bookmark simple weapons list
+			else if(mat.equals("b")){ 
+				System.out.println("Which simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed"))
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";	
+			}
+			gear += "Explorer's pack, 4 Javelins(1d6 Piercing[Thrown:30/120]), ";
 		}
 		else if(nClss.equals("bard"))
 		{
-			health = 8 + nStats.get(2);
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Dexterity & Charisma";
 			hitDie = "d8";
+			ac = 11 + Integer.parseInt(init); //assumed leather
+			System.out.println("Would you like a rapier(a), longsword(b), or any simple weapon(c)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a")){
+				gear += "Rapier(1d8 Piercing, Finesse), ";}
+			else if(mat.equals("b")){
+				gear += "Longsword(1d8 Slashing), ";}
+			else if(mat.equals("c")){
+				System.out.println("Which simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";	
+				}
+			System.out.println("Would you like a diplomat's pack(a) or entertainter's pack(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "Diplomat's pack, ";
+			else if(mat.equals("b"))
+				gear += "Entertainer's pack, ";
+			System.out.println("Type an instrument: ");
+			gear += z.toTitleCase(armor.nextLine().trim()) + ", ";
+			gear += "Dagger(1d4 Piercing), ";
 		}
 		else if(nClss.equals("cleric"))
 		{
-			health = 8 + nStats.get(2);
+			int scale = 0;
+			if(Integer.parseInt(init) <= 2)
+				scale = 14 + Integer.parseInt(init);
+			else
+				scale = 14 + 2;
+			int leather = 11 + Integer.parseInt(init);
+			int chain = 16;
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
 			hitDie = "d8";
+			System.out.println("Choose an armor: Scale(" + scale + "), Leather(" + leather + "), or Chain(if proficient)(" + chain + ")");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("scale")){
+				ac = scale;
+			}
+			else if(mat.equals("leather")){
+				ac = leather;
+			}
+			else if(mat.equals("chain")){
+				ac = chain;
+				if(nStats.get(0) < 13)
+					speed -= 10;
+			}
+			else{
+				System.out.println("Not a valid armor");
+				ac = 10 + Integer.parseInt(init);
+			}
+			System.out.println("Pick a weapon: Mace(1d6 Bludgeoning) or Warhammer(if proficient)(1d8 Bludgeoning/1d10)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("mace"))
+				gear += "Mace(1d6 Bludgeoning), ";
+			else if(mat.equals("warhammer"))
+				gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+			System.out.println("Pick a simple Weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+			"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+			"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+			", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("club"))
+				gear += "Club(1d4 Bludgeoning), ";
+			else if(mat.equals("dagger"))
+				gear += "Dagger(1d4 Piercing), ";
+			else if(mat.equals("greatclub"))
+				gear += "Greatclub(1d8 Bludgeoning), ";
+			else if(mat.equals("handaxe"))
+				gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+			else if(mat.equals("javelin"))
+				gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+			else if(mat.equals("light hammer"))
+				gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+			else if(mat.equals("mace"))
+				gear += "Mace(1d6 Bludgeoning), ";
+			else if(mat.equals("quarterstaff"))
+				gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+			else if(mat.equals("sickle"))
+				gear += "Sickle(1d4 Slashing), ";
+			else if(mat.equals("spear"))
+				gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+			else if(mat.equals("unarmed")) 
+				gear += "Unarmed(1 Bludgeoning), ";
+			else if(mat.equals("crossbow"))
+				gear += "Crossbow(1d8 Piercing[80/320]), ";
+			else if(mat.equals("dart"))
+				gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+			else if(mat.equals("shortbow"))
+				gear += "Shortbow(1d6 Piercing[80/320]), ";
+			else if(mat.equals("sling"))
+				gear += "Sling(1d4 Bludgeoning[30/120]), ";
+			System.out.println("Pick a pack: Priest or Explorer");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("priest"))
+				gear += "Priest's Pack, ";
+			else if(mat.equals("explorer"))
+				gear += "Explorer's Pack, ";
+			ac += 2;
+			gear += "Holy symbol, ";
 		}
 		else if(nClss.equals("druid"))
 		{
-			health = 8 + nStats.get(2);
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Intelligence & Wisdom";
 			hitDie = "d8";
+			System.out.println("Would you like a shield or simple weapon(weapon)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("shield")){ //assume leather
+				ac = 11 + Integer.parseInt(init) + 2;
+			}
+			else{
+				ac = 11 + Integer.parseInt(init);
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";	
+			}
+			System.out.println("Pick: Scimitar(a) or any simple weapon(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "";
+			else if(mat.equals("b")){
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";	
+			}
+			gear += "Explorer's Pack, Druidic Focus, ";
 		}
-		else if(nClss.equals("fighter"))
+		else if(nClss.equals("fighter")) 
 		{
-			health = 10 + nStats.get(2);
+			int leather = 11 + Integer.parseInt(init);
+			health = 10 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*10) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Constitution";
 			hitDie = "d10";
+			System.out.println("Would you like Chain(16) or Leather armor(" + leather + ")");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("chain")){
+				ac = 16;
+				if(nStats.get(0) < 13)
+					speed -= 10;
+			}
+			else if(mat.equals("leather")){
+				ac = leather;
+				gear += "Longbow(1d8 Piercing[150/600]), ";
+			}
+			else
+				ac = 10 + Integer.parseInt(init);
+			System.out.println("Would you like 1 martial weapon with a shield(shield) or 2 martial weapons(weapon)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("shield")){
+				ac += 2;
+				System.out.println("Pick a martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+				"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+				"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, Finesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+				"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)" + 
+				", Blowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), \nHeavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)");
+				mat =armor.nextLine().toLowerCase().trim();
+				if(mat.equals("battleaxe"))
+					gear += "Battleaxe(1d8 Slashing/1d10), ";
+				else if(mat.equals("flail"))
+					gear += "Flail(1d8 Bludgeoning), ";
+				else if(mat.equals("glaive"))
+					gear += "Glaive(1d10 Slashing), ";
+				else if(mat.equals("greataxe"))
+					gear += "Greataxe(1d12 Slashing), ";
+				else if(mat.equals("greatsword"))
+					gear += "Greatsword(2d6 Slashing), ";
+				else if(mat.equals("halberd"))
+					gear += "Halberd(1d10 Slashing), ";
+				else if(mat.equals("lance"))
+					gear += "Lance(1d12 Piercing), ";
+				else if(mat.equals("longsword"))
+					gear += "Longsword(1d8 Slashing), ";
+				else if(mat.equals("maul"))
+					gear += "Maul(2d6 Bludgeoning), ";
+				else if(mat.equals("morningstar"))
+					gear += "Morningstar(1d8 Piercing), ";
+				else if(mat.equals("pike"))
+					gear += "Pike(1d10 Piercing), ";
+				else if(mat.equals("rapier"))
+					gear += "Rapier(1d8 Piercing, Finesse), ";
+				else if(mat.equals("scimitar"))
+					gear += "Scimitar(1d6 Piercing, Finesse), ";
+				else if(mat.equals("shortsword"))
+					gear += "Shortsword(1d6 Piercing, Finesse), ";
+				else if(mat.equals("trident"))
+					gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("war pick"))
+					gear += "War pick(1d8 Piercing), ";
+				else if(mat.equals("warhammer"))
+					gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+				else if(mat.equals("whip"))
+					gear += "Whip(1d4 Slashing, Finesse), ";
+				else if(mat.equals("blowgun"))
+					gear += "Blowgun(1 Piercing[25/100]), ";
+				else if(mat.equals("hand"))
+					gear += "Hand Crossbow(1d6 Piercing[30/120]), ";
+				else if(mat.equals("heavy"))
+					gear += "Heavy Crossbow(1d10 Piercing[100/400]), ";
+				else if(mat.equals("longbow"))
+					gear += "Longbow(1d8 Piercing[150/600]), ";
+				else if(mat.equals("net"))
+					gear += "Net(-[5/15], Special), ";
+			}
+			else if(mat.equals("weapon")){
+				for(int x = 0; x <= 1; x++){
+					System.out.println("Pick a martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+					"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+					"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, Finesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+					"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)" + 
+					", Blowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), \nHeavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)");
+					mat =armor.nextLine().toLowerCase().trim();
+					if(mat.equals("battleaxe"))
+						gear += "Battleaxe(1d8 Slashing/1d10), ";
+					else if(mat.equals("flail"))
+						gear += "Flail(1d8 Bludgeoning), ";
+					else if(mat.equals("glaive"))
+						gear += "Glaive(1d10 Slashing), ";
+					else if(mat.equals("greataxe"))
+						gear += "Greataxe(1d12 Slashing), ";
+					else if(mat.equals("greatsword"))
+						gear += "Greatsword(2d6 Slashing), ";
+					else if(mat.equals("halberd"))
+						gear += "Halberd(1d10 Slashing), ";
+					else if(mat.equals("lance"))
+						gear += "Lance(1d12 Piercing), ";
+					else if(mat.equals("longsword"))
+						gear += "Longsword(1d8 Slashing), ";
+					else if(mat.equals("maul"))
+						gear += "Maul(2d6 Bludgeoning), ";
+					else if(mat.equals("morningstar"))
+						gear += "Morningstar(1d8 Piercing), ";
+					else if(mat.equals("pike"))
+						gear += "Pike(1d10 Piercing), ";
+					else if(mat.equals("rapier"))
+						gear += "Rapier(1d8 Piercing, Finesse), ";
+					else if(mat.equals("scimitar"))
+						gear += "Scimitar(1d6 Piercing, Finesse), ";
+					else if(mat.equals("shortsword"))
+						gear += "Shortsword(1d6 Piercing, Finesse), ";
+					else if(mat.equals("trident"))
+						gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+					else if(mat.equals("war pick"))
+						gear += "War pick(1d8 Piercing), ";
+					else if(mat.equals("warhammer"))
+						gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+					else if(mat.equals("whip"))
+						gear += "Whip(1d4 Slashing, Finesse), ";
+					else if(mat.equals("blowgun"))
+						gear += "Blowgun(1 Piercing[25/100]), ";
+					else if(mat.equals("hand"))
+						gear += "Hand Crossbow(1d6 Piercing[30/120]), ";
+					else if(mat.equals("heavy"))
+						gear += "Heavy Crossbow(1d10 Piercing[100/400]), ";
+					else if(mat.equals("longbow"))
+						gear += "Longbow(1d8 Piercing[150/600]), ";
+					else if(mat.equals("net"))
+						gear += "Net(-[5/15], Special), ";
+					}
+			}
+			System.out.println("Pick: crossbow or 2 handaxes(handaxe)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("crossbow"))
+				gear += "Crossbow(1d8 Piercing[80/320]), ";
+			else if(mat.equals("handaxe"))
+				gear += "2 Handaxes(1d6 Slashing[Thrown:20/60]), ";
+			System.out.println("Pick: Dungeoneer or Explorer Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("explorer"))
+				gear += "Explorer's Pack, ";
 		}
 		else if(nClss.equals("monk"))
 		{
-			health = 8 + nStats.get(2);
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Dexterity";
 			hitDie = "d8";
+			ac = 10 + Integer.parseInt(init) + Integer.parseInt(wis);
+			System.out.println("Pick: Shortsword(a) or any simple weapon(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "Shortsword(1d6 Piercing, Finesse), ";
+			else if(mat.equals("b")){
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";
+			}
+			System.out.println("Pick: Dungeoneer or Explorer Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("explorer"));
+				gear += "Explorer's Pack, ";
+			gear += "10 Darts(1d4 Piercing[20/60], Finesse), ";
 		}
 		else if(nClss.equals("paladin"))
 		{
-			health = 10 + nStats.get(2);
+			health = 10 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*10) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
 			hitDie = "d10";
+			System.out.println("Would you like 1 martial weapon with a shield(shield) or 2 martial weapons(weapon)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("shield")){
+				ac += 2;
+				System.out.println("Pick a martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+				"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+				"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, Finesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+				"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)" + 
+				", Blowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), \nHeavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)");
+				mat =armor.nextLine().toLowerCase().trim();
+				if(mat.equals("battleaxe"))
+					gear += "Battleaxe(1d8 Slashing/1d10), ";
+				else if(mat.equals("flail"))
+					gear += "Flail(1d8 Bludgeoning), ";
+				else if(mat.equals("glaive"))
+					gear += "Glaive(1d10 Slashing), ";
+				else if(mat.equals("greataxe"))
+					gear += "Greataxe(1d12 Slashing), ";
+				else if(mat.equals("greatsword"))
+					gear += "Greatsword(2d6 Slashing), ";
+				else if(mat.equals("halberd"))
+					gear += "Halberd(1d10 Slashing), ";
+				else if(mat.equals("lance"))
+					gear += "Lance(1d12 Piercing), ";
+				else if(mat.equals("longsword"))
+					gear += "Longsword(1d8 Slashing), ";
+				else if(mat.equals("maul"))
+					gear += "Maul(2d6 Bludgeoning), ";
+				else if(mat.equals("morningstar"))
+					gear += "Morningstar(1d8 Piercing), ";
+				else if(mat.equals("pike"))
+					gear += "Pike(1d10 Piercing), ";
+				else if(mat.equals("rapier"))
+					gear += "Rapier(1d8 Piercing, Finesse), ";
+				else if(mat.equals("scimitar"))
+					gear += "Scimitar(1d6 Piercing, Finesse), ";
+				else if(mat.equals("shortsword"))
+					gear += "Shortsword(1d6 Piercing, Finesse), ";
+				else if(mat.equals("trident"))
+					gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("war pick"))
+					gear += "War pick(1d8 Piercing), ";
+				else if(mat.equals("warhammer"))
+					gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+				else if(mat.equals("whip"))
+					gear += "Whip(1d4 Slashing, Finesse), ";
+				else if(mat.equals("blowgun"))
+					gear += "Blowgun(1 Piercing[25/100]), ";
+				else if(mat.equals("hand"))
+					gear += "Hand Crossbow(1d6 Piercing[30/120]), ";
+				else if(mat.equals("heavy"))
+					gear += "Heavy Crossbow(1d10 Piercing[100/400]), ";
+				else if(mat.equals("longbow"))
+					gear += "Longbow(1d8 Piercing[150/600]), ";
+				else if(mat.equals("net"))
+					gear += "Net(-[5/15], Special), ";
+			}
+			else if(mat.equals("weapon")){
+				for(int x = 0; x <= 1; x++){
+					System.out.println("Pick a martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+					"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+					"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, Finesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+					"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)" + 
+					", Blowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), \nHeavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)");
+					mat =armor.nextLine().toLowerCase().trim();
+					if(mat.equals("battleaxe"))
+						gear += "Battleaxe(1d8 Slashing/1d10), ";
+					else if(mat.equals("flail"))
+						gear += "Flail(1d8 Bludgeoning), ";
+					else if(mat.equals("glaive"))
+						gear += "Glaive(1d10 Slashing), ";
+					else if(mat.equals("greataxe"))
+						gear += "Greataxe(1d12 Slashing), ";
+					else if(mat.equals("greatsword"))
+						gear += "Greatsword(2d6 Slashing), ";
+					else if(mat.equals("halberd"))
+						gear += "Halberd(1d10 Slashing), ";
+					else if(mat.equals("lance"))
+						gear += "Lance(1d12 Piercing), ";
+					else if(mat.equals("longsword"))
+						gear += "Longsword(1d8 Slashing), ";
+					else if(mat.equals("maul"))
+						gear += "Maul(2d6 Bludgeoning), ";
+					else if(mat.equals("morningstar"))
+						gear += "Morningstar(1d8 Piercing), ";
+					else if(mat.equals("pike"))
+						gear += "Pike(1d10 Piercing), ";
+					else if(mat.equals("rapier"))
+						gear += "Rapier(1d8 Piercing, Finesse), ";
+					else if(mat.equals("scimitar"))
+						gear += "Scimitar(1d6 Piercing, Finesse), ";
+					else if(mat.equals("shortsword"))
+						gear += "Shortsword(1d6 Piercing, Finesse), ";
+					else if(mat.equals("trident"))
+						gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+					else if(mat.equals("war pick"))
+						gear += "War pick(1d8 Piercing), ";
+					else if(mat.equals("warhammer"))
+						gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+					else if(mat.equals("whip"))
+						gear += "Whip(1d4 Slashing, Finesse), ";
+					else if(mat.equals("blowgun"))
+						gear += "Blowgun(1 Piercing[25/100]), ";
+					else if(mat.equals("hand"))
+						gear += "Hand Crossbow(1d6 Piercing[30/120]), ";
+					else if(mat.equals("heavy"))
+						gear += "Heavy Crossbow(1d10 Piercing[100/400]), ";
+					else if(mat.equals("longbow"))
+						gear += "Longbow(1d8 Piercing[150/600]), ";
+					else if(mat.equals("net"))
+						gear += "Net(-[5/15], Special), ";
+					}
+				}
+			System.out.println("Pick: 10 Javelins(a) or any simple weapon(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "10 Javelins(1d6 Piercing[Thrown:30/120]), ";
+			else if(mat.equals("b")){
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";
+			}
+			System.out.println("Pick: Priest or Explorer Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("priest"))
+				gear += "Priest's Pack, ";
+			else if(mat.equals("explorer"));
+				gear += "Explorer's Pack, ";
+			ac = 16;
+			if(nStats.get(0) < 13)
+				speed -= 10;
+			gear += "Holy Symbol, ";
 		}
 		else if(nClss.equals("ranger"))
 		{
-			health = 10 + nStats.get(2);
+			int leather = 11 + Integer.parseInt(init);
+			int scale = 0;
+			if(Integer.parseInt(init) <=2)
+				scale = 14 + Integer.parseInt(init);
+			else
+				scale = 14 + 2;
+			health = 10 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*10) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*10) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Strength & Dexterity";
 			hitDie = "d10";
+			System.out.println("Pick: Scale(" + scale + ") or Leather(" + leather + ")");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("scale"))
+				ac = scale;
+			else if(mat.equals("leather"))
+				ac = leather;
+			System.out.println("Pick: 2 Shortswords(a) or 2 simple melee weapons(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "2 Shortswords(1d6 Piercing, Finesse), ";
+			else if(mat.equals("b")){
+				for(int x = 0; x < 2; x++){
+					System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+					"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+					"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)");
+					mat = armor.nextLine().toLowerCase().trim();
+					if(mat.equals("club"))
+						gear += "Club(1d4 Bludgeoning), ";
+					else if(mat.equals("dagger"))
+						gear += "Dagger(1d4 Piercing), ";
+					else if(mat.equals("greatclub"))
+						gear += "Greatclub(1d8 Bludgeoning), ";
+					else if(mat.equals("handaxe"))
+						gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+					else if(mat.equals("javelin"))
+						gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+					else if(mat.equals("light hammer"))
+						gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+					else if(mat.equals("mace"))
+						gear += "Mace(1d6 Bludgeoning), ";
+					else if(mat.equals("quarterstaff"))
+						gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+					else if(mat.equals("sickle"))
+						gear += "Sickle(1d4 Slashing), ";
+					else if(mat.equals("spear"))
+						gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+					else if(mat.equals("unarmed")) 
+						gear += "Unarmed(1 Bludgeoning), ";
+				}
+			}
+			gear += "Longbow(1d8 Piercing[150/600]), ";
+			System.out.println("Pick: Dungeoneer or Explorer Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("explorer"));
+				gear += "Explorer's Pack, ";
 		}
 		else if(nClss.equals("rogue"))
 		{
-			health = 8 + nStats.get(2);
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Dexterity & Intelligence";
 			hitDie = "d8";
+			System.out.println("Pick: Rapier or Shortsword");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("rapier"))
+				gear += "Rapier(1d8 Piercing, Finesse), ";
+			else if(mat.equals("shortsword"))
+				gear += "Shortsword(1d6 Piercing, Finesse), ";
+			System.out.println("Pick: Shortbow or Shortsword");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("shortbow"))
+				gear += "Shortbow(1d6 Piercing[80/320]), ";
+			else if(mat.equals("shortsword"))
+				gear += "Shortsword(1d6 Piercing, Finesse), ";
+			gear += "2 Daggers(1d4 Piercing), ";
+			ac = 11 + Integer.parseInt(init);
+			System.out.println("Pick: Dungeoneer, Explorer, or Burglar Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("explorer"))
+				gear += "Explorer's Pack, ";
+			else if(mat.equals("burglar"))
+				gear += "Burglar's Pack, ";
+			gear += "Thieves' Tools, ";
 		}
 		else if(nClss.equals("sorcerer"))
 		{
-			health = 6 + nStats.get(2);
+			health = 6 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*6) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*6) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Constitution & Charisma";
 			hitDie = "d6";
+			System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+			"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+			"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+			", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("club"))
+				gear += "Club(1d4 Bludgeoning), ";
+			else if(mat.equals("dagger"))
+				gear += "Dagger(1d4 Piercing), ";
+			else if(mat.equals("greatclub"))
+				gear += "Greatclub(1d8 Bludgeoning), ";
+			else if(mat.equals("handaxe"))
+				gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+			else if(mat.equals("javelin"))
+				gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+			else if(mat.equals("light hammer"))
+				gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+			else if(mat.equals("mace"))
+				gear += "Mace(1d6 Bludgeoning), ";
+			else if(mat.equals("quarterstaff"))
+				gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+			else if(mat.equals("sickle"))
+				gear += "Sickle(1d4 Slashing), ";
+			else if(mat.equals("spear"))
+				gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+			else if(mat.equals("unarmed")) 
+				gear += "Unarmed(1 Bludgeoning), ";
+			else if(mat.equals("crossbow"))
+				gear += "Crossbow(1d8 Piercing[80/320]), ";
+			else if(mat.equals("dart"))
+				gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+			else if(mat.equals("shortbow"))
+				gear += "Shortbow(1d6 Piercing[80/320]), ";
+			else if(mat.equals("sling"))
+				gear += "Sling(1d4 Bludgeoning[30/120]), ";
+			gear += "2 Daggers(1d4 Piercing), ";
+			System.out.println("Pick: Component pouch(a) or Arcane focus(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "Component Pouch, ";
+			else if(mat.equals("b")){
+				System.out.println("Pick: Crystal, Orb, Rod, Staff, or Wand");
+				gear += "Arcane Focus: " + z.toTitleCase(armor.nextLine().trim());
+			}
+			System.out.println("Pick: Dungeoneer or Explorer Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("explorer"));
+				gear += "Explorer's Pack, ";
+			ac = 11 + Integer.parseInt(init);
 		}
 		else if(nClss.equals("warlock"))
 		{
-			health = 8 + nStats.get(2);
+			health = 8 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*8) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*8) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Wisdom & Charisma";
 			hitDie = "d8";
+			for(int x = 0; x < 2; x++){
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Dagger(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";
+			}
+			gear += "2 Daggers(1d4 Piercing), ";
+			System.out.println("Pick: Component pouch(a) or Arcane focus(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "Component Pouch, ";
+			else if(mat.equals("b")){
+				System.out.println("Pick: Crystal, Orb, Rod, Staff, or Wand");
+				gear += "Arcane Focus: " + z.toTitleCase(armor.nextLine().trim());
+			}
+			System.out.println("Pick: Dungeoneer or Scholar Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("scholar"));
+				gear += "Scholar's Pack, ";
+			ac = 11 + Integer.parseInt(init);
 		}
 		else if(nClss.equals("wizard"))	
 		{
-			health = 6 + nStats.get(2);
+			health = 6 + Integer.parseInt(z.toInt(con));
 			if(nLevel > 1)
-				health += ((Math.random()*6) + 1) + (nStats.get(2) * (nLevel)-1);
+				health += ((Math.random()*6) + 1) + (Integer.parseInt(con) * (nLevel)-1);
 			savingThrow = "Itelligence & Wisdom";
 			hitDie = "d8";
+			System.out.println("Pick: Quarterstaff or Dagger");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("quarterstaff"))
+				gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+			else if(mat.equals("dagger"))
+				gear += "Dagger(1d4 Piercing), ";
+			System.out.println("Pick: Component pouch(a) or Arcane focus(b)");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("a"))
+				gear += "Component Pouch, ";
+			else if(mat.equals("b")){
+				System.out.println("Pick: Crystal, Orb, Rod, Staff, or Wand");
+				gear += "Arcane Focus: " + z.toTitleCase(armor.nextLine().trim());
+			}
+			System.out.println("Pick: Dungeoneer or Scholar Pack");
+			mat = armor.nextLine().toLowerCase().trim();
+			if(mat.equals("dungeoneer"))
+				gear += "Dungeoneer's Pack, ";
+			else if(mat.equals("scholar"));
+				gear += "Scholar's Pack, ";
+			ac = 10 + Integer.parseInt(init);
+			gear += "Spellbook, ";
 		}
 		else
 			System.out.println("No values changed");
@@ -934,7 +1795,7 @@ public class player {
 		else if(nClss.equals("wizard"))
 		{
 			System.out.println("Choose an arcane tradition: Abjuration, Conjuration, Divination, "
-					+ "Enchantment, Evocation, Illusion, or Transmutation");
+					+ "Enchantment, Evocation, Illusion, Transmutation, or Necromancy");
 			subC = gloop.nextLine().toLowerCase();
 			this.getBns();
 			if(abb == true)
@@ -1048,7 +1909,7 @@ public class player {
 			
 			output += "\nSpeed: " + speed + 
 					"\nSaving Throws: " + savingThrow + 
-					"\nSee book for armor class " +
+					"\nArmor Class " + ac + 
 					"\nHit Die: " + hitDie +
 					"\nProficiency Bonus: " + prof;
 			
@@ -1058,6 +1919,8 @@ public class player {
 					"\nIntelligence: " + nStats.get(3).toString() + " " + intel +
 					"\nWisdom: " + nStats.get(4).toString() + " " + wis +
 					"\nCharisma: " + nStats.get(5).toString() + " " + cha;
+
+			output += "\n\nGear: " + gear.substring(0,gear.length()-2);
 			
 			if(!(spc.equals("")))
 					output += "\n\n" + spc + "\n\n" + descr;
@@ -1068,5 +1931,28 @@ public class player {
 			output = "No values output";
 		
 		return output;
+	}
+
+	public String getTables(){
+		String out = "";
+		out += "Simple Melee Weapons: \nClub(1d4 Bludgeoning), Daggar(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+		"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+		"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)";
+		out += "\n\nSimple Ranged Weapons: \nCrossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])";
+
+		out += "\n\nMartial Melee Weapons: \nBattleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+		"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+		"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, FInesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+		"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)";
+		out += "\n\nMartial Ranged Weapons: \nBlowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), Heavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)";
+		
+		out += "\n\nLight Armor: \nPadded(11+dex)*, Leather(11+dex), Studded Leather(12+dex)";
+		out += "\n\nMedium Armor**: \nHide(12+dex), Chain Shirt(13+dex), Scale Mail(14+dex)" +
+			"\nBreastplate(14+dex), Half Plate(15+dex)";
+
+		out += "\n\nHeavy Armor: \nRing Mail(14), Chain Mail(16, str 13), Splint(17, str 15), Plate(18), str 15";
+		out += "\n\nShield: \nShield(AC+2)";
+		out += "\n\n* Disadvantage stealth, **max +2 dex, str # needs that strength or higher or else speed -10";
+		return out;
 	}
 }

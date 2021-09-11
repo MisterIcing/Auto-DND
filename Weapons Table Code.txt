@@ -1,0 +1,94 @@
+SIMPLE Weapons
+else if(mat.equals("b")){
+				System.out.println("Pick a simple weapon: Club(1d4 Bludgeoning), Daggar(1d4 Piercing), Greatclub(1d8 Bludgeoning), Handaxe(1d6 Slashing[Thrown:20/60]), \n" +
+				"Javelin(1d6 Piercing[Thrown:30/120]), Light Hammer(1d4 Bludgeoning[Thrown:20/60]), Mace(1d6 Bludgeoning), Quarterstaff(1d6 Bludgeoning/1d8), \n" +
+				"Sickle(1d4 Slashing), Spear(1d6 Piercing[Thrown:20/60]/1d8), Unarmed(1 Bludgeoning)" + 
+				", Crossbow(1d8 Piercing[80/320]), \nDart(1d4 Piercing[20/60], Finesse), Shortbow(1d6 Piercing[80/320]), Sling(1d4 Bludgeoning[30/120])");
+				mat = armor.nextLine().toLowerCase().trim();
+				if(mat.equals("club"))
+					gear += "Club(1d4 Bludgeoning), ";
+				else if(mat.equals("dagger"))
+					gear += "Dagger(1d4 Piercing), ";
+				else if(mat.equals("greatclub"))
+					gear += "Greatclub(1d8 Bludgeoning), ";
+				else if(mat.equals("handaxe"))
+					gear += "Handaxe(1d6 Slashing[Thrown:20/60]), ";
+				else if(mat.equals("javelin"))
+					gear += "Javelin(1d6 Piercing[Thrown:30/120]), ";
+				else if(mat.equals("light hammer"))
+					gear += "Light Hammer(1d4 Bludgeoning[Thrown:20/60]), ";
+				else if(mat.equals("mace"))
+					gear += "Mace(1d6 Bludgeoning), ";
+				else if(mat.equals("quarterstaff"))
+					gear += "Quarterstaff(1d6 Bludgeoning/1d8), ";
+				else if(mat.equals("sickle"))
+					gear += "Sickle(1d4 Slashing), ";
+				else if(mat.equals("spear"))
+					gear += "Spear(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("unarmed")) 
+					gear += "Unarmed(1 Bludgeoning), ";
+				else if(mat.equals("crossbow"))
+					gear += "Crossbow(1d8 Piercing[80/320]), ";
+				else if(mat.equals("dart"))
+					gear += "Dart(1d4 Piercing[20/60], Finesse), ";
+				else if(mat.equals("shortbow"))
+					gear += "Shortbow(1d6 Piercing[80/320]), ";
+				else if(mat.equals("sling"))
+					gear += "Sling(1d4 Bludgeoning[30/120]), ";	
+			}
+
+MARTIAL weapons
+else if(mat.equals("b")){ 
+				System.out.println("Pick a martial melee weapon: Battleaxe(1d8 Slashing/1d10), Flail(1d8 Bludgeoning), Glaive(1d10 Slashing), Greataxe(1d12 Slashing), \n" +
+				"Greatsword(2d6 Slashing), Halberd(1d10 Slashing), Lance(1d12 Piercing), Longsword(1d8 Slashing), Maul(2d6 Bludgeoning), Morningstar(1d8 Piercing), \n" +
+				"Pike(1d10 Piercing), Rapier(1d8 Piercing, Finesse), Scimitar(1d6 Piercing, Finesse), Shortsword(1d6 Piercing, FInesse), Trident(1d6 Piercing[Thrown:20/60]/1d8), \n" +
+				"War pick(1d8 Piercing), Warhammer(1d8 Bludgeoning/1d10), Whip(1d4 Slashing, Finesse)" + 
+				", Blowgun(1 Piercing[25/100]), Hand Crossbow(Hand)(1d6 Piercing[30/120]), \nHeavy Crossbow(Heavy)(1d10 Piercing[100/400]), Longbow(1d8 Piercing[150/600]), Net(-[5/15], Special)");
+				mat =armor.nextLine().toLowerCase().trim();
+				if(mat.equals("battleaxe"))
+					gear += "Battleaxe(1d8 Slashing/1d10), ";
+				else if(mat.equals("flail"))
+					gear += "Flail(1d8 Bludgeoning), ";
+				else if(mat.equals("glaive"))
+					gear += "Glaive(1d10 Slashing), ";
+				else if(mat.equals("greataxe"))
+					gear += "Greataxe(1d12 Slashing), ";
+				else if(mat.equals("greatsword"))
+					gear += "Greatsword(2d6 Slashing), ";
+				else if(mat.equals("halberd"))
+					gear += "Halberd(1d10 Slashing), ";
+				else if(mat.equals("lance"))
+					gear += "Lance(1d12 Piercing), ";
+				else if(mat.equals("longsword"))
+					gear += "Longsword(1d8 Slashing), ";
+				else if(mat.equals("maul"))
+					gear += "Maul(2d6 Bludgeoning), ";
+				else if(mat.equals("morningstar"))
+					gear += "Morningstar(1d8 Piercing), ";
+				else if(mat.equals("pike"))
+					gear += "Pike(1d10 Piercing), ";
+				else if(mat.equals("rapier"))
+					gear += "Rapier(1d8 Piercing, Finesse), ";
+				else if(mat.equals("scimitar"))
+					gear += "Scimitar(1d6 Piercing, Finesse), ";
+				else if(mat.equals("shortsword"))
+					gear += "Shortsword(1d6 Piercing, Finesse), ";
+				else if(mat.equals("trident"))
+					gear += "Trident(1d6 Piercing[Thrown:20/60]/1d8), ";
+				else if(mat.equals("war pick"))
+					gear += "War pick(1d8 Piercing), ";
+				else if(mat.equals("warhammer"))
+					gear += "Warhammer(1d8 Bludgeoning/1d10), ";
+				else if(mat.equals("whip"))
+					gear += "Whip(1d4 Slashing, Finesse), ";
+				else if(mat.equals("blowgun"))
+					gear += "Blowgun(1 Piercing[25/100]), ";
+				else if(mat.equals("hand"))
+					gear += "Hand Crossbow(1d6 Piercing[30/120]), ";
+				else if(mat.equals("heavy"))
+					gear += "Heavy Crossbow(1d10 Piercing[100/400]), ";
+				else if(mat.equals("longbow"))
+					gear += "Longbow(1d8 Piercing[150/600]), ";
+				else if(mat.equals("net"))
+					gear += "Net(-[5/15], Special), ";
+			}

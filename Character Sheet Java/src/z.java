@@ -77,4 +77,12 @@ public class z {
 	{
 		return (int)(Math.random()*100+1);
 	}
+	static public String toInt(String s){
+		String out = "";
+		if(s.contains("+"))
+			out = s.substring(1, s.length());
+		else
+			out = s;
+		return out;
+	}
 }

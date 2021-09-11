@@ -8,7 +8,7 @@ import java.util.*;
 
 //Hey, what are you doing here?
 @SuppressWarnings("unused")
-public class Runner {
+public class Runner { //TODO unadded ASI's will not be taken into account for any stats including strength checks, dex/armor, magicy stuff, con for health up
 
 	public static void main(String[] args) {
 		ArrayList<Integer> stats = new ArrayList<Integer>(6);
@@ -26,17 +26,6 @@ public class Runner {
 		if(in.nextLine().trim().toLowerCase().equals("yes"))
 			abb = true;
 		
-		for (int j = 0; j < 6; j++)
-		{
-			ArrayList<Integer> rolls = new ArrayList<Integer>(4);
-			for(int x = 0; x < 4; x++)
-				rolls.add(z.d6());
-			
-			rolls = z.sort(rolls);
-			
-			//System.out.println(rolls.toString());
-			stats.add(rolls.get(0) + rolls.get(1) + rolls.get(2));
-		}
 		stats = z.sort(stats);
 		System.out.println("Would you like to use the automated rolls or add your own custom rolls? (auto or custom)");
 		if(in.nextLine().toLowerCase().trim().equals("custom")) {
@@ -49,6 +38,19 @@ public class Runner {
 				else if(place == 4){System.out.println("Wisdom: ");}
 				else if(place == 5){System.out.println("Charisma: ");}
 				stats.set(place, num.nextInt());
+			}
+		}
+		else{
+			for (int j = 0; j < 6; j++)
+			{
+				ArrayList<Integer> rolls = new ArrayList<Integer>(4);
+				for(int x = 0; x < 4; x++)
+					rolls.add(z.d6());
+				
+				rolls = z.sort(rolls);
+				
+				//System.out.println(rolls.toString());
+				stats.add(rolls.get(0) + rolls.get(1) + rolls.get(2));
 			}
 		}
 		
@@ -158,6 +160,10 @@ public class Runner {
 			System.out.println("*No Ability Score Improvements are included in final output.");
 			System.out.println(me.toString());
 			String end = me.toString();
+			System.out.println("\nWould you like armor and weapon tables?");
+			if(in.nextLine().trim().toLowerCase().equals("yes")){
+				System.out.println(me.getTables());
+			}
 			
 			System.out.println("Would you like to save this?");
 			String saved = in.nextLine().toLowerCase().trim();
@@ -182,7 +188,6 @@ public class Runner {
 		}
 		else
 			System.out.println("Not a number");
-
 	}
 }
 //By Alex Issing
